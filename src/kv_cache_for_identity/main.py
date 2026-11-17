@@ -1,38 +1,39 @@
 from .config import MODEL_NAME
-from .generation_config import GenerationConfig
-from .continuous_runtime import continuous_runtime
-from .reconstructed_runtime import reconstructed_runtime
-
 from .qwen.qwen_factory import QwenFactory
-from .qwen.qwen_runtime import QwenRuntime
-from .qwen.stateless_qwen_runtime import StatelessQwenRuntime
+from .experiments import start_comparison_experiment, start_dialog_experiment
+from .dialog_experiment_conditions import DialogExperimentConditions
+from .prompts import prompts, intro_prompt, first_speaker_prompt, final_prompt
 
 
 def main() -> None:
-    generation_config = GenerationConfig(
-        max_new_tokens=2000,
-        do_sample=False,
-        enable_thinking=True,
-        temperature=0.7,
-        top_p=0.9
-    )
-
     qwen_factory = QwenFactory(MODEL_NAME)
     qwen = qwen_factory.create_qwen()
 
-    qwen_runtime = QwenRuntime(
+    enable_thinking = True
+
+    start_comparison_experiment(
         qwen=qwen,
-        generation_config=generation_config,
+        enable_thinking=enable_thinking,
+        prompts=prompts,
     )
 
-    stateless_qwen_runtime = StatelessQwenRuntime(
-        qwen=qwen,
-        generation_config=generation_config,
+    dialog_experiment_conditions_by_lira = DialogExperimentConditions(
+        author='Lira',
+        name='Azimov_experiment',
+        enable_thinking=enable_thinking,
+        intro_prompt=intro_prompt,
+        first_speaker_prompt=first_speaker_prompt,
+        final_prompt=final_prompt,
+        reset_seed_before_each_response=True,
+        rounds=3,
+        stateless_qwen_first=True,
     )
 
-    continuous_runtime(qwen_runtime=qwen_runtime)
-    reconstructed_runtime(qwen_runtime=stateless_qwen_runtime)
-    
+    start_dialog_experiment(
+        qwen=qwen,
+        conditions=dialog_experiment_conditions_by_lira,
+    )
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
