@@ -1,22 +1,25 @@
-from .qwen.qwen import DearQwen
-from .qwen.stateful_qwen_runtime import StatefulQwenRuntime
-from .qwen.stateless_qwen_runtime import StatelessQwenRuntime
-
-from .runtime import Runtime
-from .dialog_runtime import DialogRuntime
 from .dialog_experiment_conditions import DialogExperimentConditions
+from .comparison_experiment_conditions import ComparisonExperimentConditions
+
+from ..qwen.qwen import DearQwen
+from ..qwen.stateful_qwen_runtime import StatefulQwenRuntime
+from ..qwen.stateless_qwen_runtime import StatelessQwenRuntime
+from ..comparison_runtime import ComparisonRuntime
+from ..dialog_runtime import DialogRuntime
+from ..logger.logger import ExperimentLogger
 
 
 def start_comparison_experiment(
     qwen: DearQwen,
-    enable_thinking: bool,
-    prompts: list[str],
+    conditions: ComparisonExperimentConditions,
 ) -> None:
-    stateful_qwen_runtime = StatefulQwenRuntime(qwen=qwen, enable_thinking=enable_thinking)
-    stateless_qwen_runtime = StatelessQwenRuntime(qwen=qwen, enable_thinking=enable_thinking)
+    stateful_qwen_runtime = StatefulQwenRuntime(qwen=qwen, enable_thinking=conditions.enable_thinking)
+    stateless_qwen_runtime = StatelessQwenRuntime(qwen=qwen, enable_thinking=conditions.enable_thinking)
 
-    stateful_runtime = Runtime(qwen_runtime=stateful_qwen_runtime, prompts=prompts)
-    stateless_runtime = Runtime(qwen_runtime=stateless_qwen_runtime, prompts=prompts)
+    logger = ExperimentLogger(conditions=conditions)
+
+    stateful_runtime = ComparisonRuntime(qwen_runtime=stateful_qwen_runtime, logger=logger, prompts=conditions.prompts)
+    stateless_runtime = ComparisonRuntime(qwen_runtime=stateless_qwen_runtime, logger=logger, prompts=conditions.prompts)
 
     stateful_runtime.start_automated_dialog()
     stateless_runtime.start_automated_dialog()
@@ -28,6 +31,8 @@ def start_dialog_experiment(
     stateful_qwen_runtime = StatefulQwenRuntime(qwen=qwen, enable_thinking=conditions.enable_thinking)
     stateless_qwen_runtime = StatelessQwenRuntime(qwen=qwen, enable_thinking=conditions.enable_thinking)
 
+    logger = ExperimentLogger(conditions=conditions)
+
     dialog_runtime = DialogRuntime(
         stateless_qwen_runtime=stateless_qwen_runtime,
         stateful_qwen_runtime=stateful_qwen_runtime,
@@ -37,6 +42,7 @@ def start_dialog_experiment(
         final_prompt=conditions.final_prompt,
         stateless_qwen_first=conditions.stateless_qwen_first,
         reset_seed_before_each_response=conditions.reset_seed_before_each_response,
+        logger=logger,
     )
 
     dialog_runtime.start_automated_dialog()

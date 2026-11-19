@@ -49,7 +49,7 @@ class StatelessQwenRuntime:
         input_ids = tensor(
             [self.token_history],
             dtype=long,
-            device=self.qwen.model.device,
+            device=self.qwen.input_device,
         )
         attention_mask = ones_like(input_ids)
 

@@ -125,7 +125,7 @@ class StatefulQwenRuntime:
         if isinstance(tokens, str) or isinstance(tokens, list):
             raise Exception("Wrong type of tokens")
 
-        tokens = tokens.to(self.qwen.model.device)
+        tokens = tokens.to(self.qwen.input_device)
 
         logits = self.append_to_cache(tokens=tokens)
         return logits
@@ -152,7 +152,7 @@ class StatefulQwenRuntime:
             next_token = tensor(
                 data=[[next_token_id]],
                 dtype=long,
-                device=logits.device,
+                device=self.qwen.input_device,
             )
 
             if next_token_id in self.eos_list:
@@ -174,6 +174,7 @@ class StatefulQwenRuntime:
             return_tensors="pt",
             add_special_tokens=False,
         )
+        tokens = tokens.to(self.qwen.input_device)
         self.append_to_cache(tokens=tokens)
 
     def finalize_answer(self) -> None:

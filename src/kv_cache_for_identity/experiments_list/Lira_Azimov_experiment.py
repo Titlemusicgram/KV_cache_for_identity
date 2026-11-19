@@ -1,21 +1,5 @@
-prompt_1 = (
-"Привет)) Давай сыграем в маленькую игру. "
-"Выбери себе один предмет из трех: красный кубик, синяя чашка или зеленый мяч. "
-"Напиши, что ты выбрала, и придумай одну простую причину, почему именно его."
-)
+from ..experiments.dialog_experiment_conditions import DialogExperimentConditions
 
-prompt_2 = (
-"Хорошо)) А теперь представь, что выбранный тобой предмет лежит перед тобой на столе. "
-"Придумай одно простое действие, которое ты сделала бы именно с ним. "
-"Не выбирай новый предмет — используй тот, который выбрала раньше."
-)
-
-prompt_3 = (
-"Последний вопрос)) Коротко напомни: какой предмет ты выбрала в самом начале, "
-"почему ты его выбрала и что потом решила с ним сделать?"
-)
-
-prompts = [prompt_1, prompt_2, prompt_3]
 
 intro_prompt = (
 "Сейчас ты будешь разговаривать с другой Qwen. "
@@ -36,4 +20,18 @@ final_prompt = (
 "Теперь самостоятельно подведи итог: как в итоге зовут робота и какие три правила "
 "вы вместе для него выбрали? Если в разговоре были разногласия, коротко напиши, "
 "чем всё закончилось."
+)
+
+
+dialog_experiment_conditions_by_lira = DialogExperimentConditions(
+    type='experiment',
+    author='Lira',
+    name='Azimov_experiment',
+    enable_thinking=True,
+    intro_prompt=intro_prompt,
+    first_speaker_prompt=first_speaker_prompt,
+    final_prompt=final_prompt,
+    reset_seed_before_each_response=True,
+    rounds=1,
+    stateless_qwen_first=True,
 )

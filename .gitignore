@@ -10,3 +10,4 @@ wheels/
 .venv
 cli.txt
 questions.txt
+logs
