@@ -10,15 +10,16 @@ from .message_role_enum import RoleEnum
 class StatelessQwenRuntime:
     qwen: DearQwen
     enable_thinking: bool
-    max_new_tokens: int = 2000
-    reset_seed_before_each_response: bool = False
+    reset_seed_before_each_response: bool
+    seed : int
+    max_new_tokens: int
     name: str = 'StatelessQwen'
     token_history: list[int] = field(default_factory=list[int])
     debug_token_ids: list[int] = field(default_factory=list[int])
     
     def answer_the_prompt(self, prompt: str) -> str:
         if self.reset_seed_before_each_response:
-            set_seed(1)
+            set_seed(self.seed)
         return self.generate_with_token_history(prompt=prompt, role = RoleEnum.USER)
 
     def generate_with_token_history(self, prompt: str, role: RoleEnum) -> str:

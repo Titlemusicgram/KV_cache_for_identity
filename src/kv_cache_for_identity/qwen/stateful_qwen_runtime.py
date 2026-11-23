@@ -13,8 +13,9 @@ from .message_role_enum import RoleEnum
 class StatefulQwenRuntime:
     qwen: DearQwen
     enable_thinking: bool
-    max_new_tokens: int = 2000
-    reset_seed_before_each_response: bool = False
+    reset_seed_before_each_response: bool
+    seed : int
+    max_new_tokens: int
     name: str = 'StatefulQwen'
     debug_token_ids: list[int] = field(default_factory=list[int])
     cache: Cache = field(init=False)
@@ -33,7 +34,7 @@ class StatefulQwenRuntime:
 
     def answer_the_prompt(self, prompt: str) -> str:
         if self.reset_seed_before_each_response:
-            set_seed(1)
+            set_seed(self.seed)
         logits = self.handle_user_message(prompt=prompt) # pyright: ignore[reportUnknownMemberType]
         answer = self.generate_answer_until_eos(logits)
         self.finalize_answer()

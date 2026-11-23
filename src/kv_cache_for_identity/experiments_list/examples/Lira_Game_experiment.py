@@ -1,4 +1,4 @@
-from ..experiments.comparison_experiment_conditions import ComparisonExperimentConditions
+from ...experiments.comparison_experiment_conditions import ComparisonExperimentConditions
 
 
 prompt_1 = (
@@ -27,4 +27,6 @@ comparison_experiment_conditions_by_lira = ComparisonExperimentConditions(
     enable_thinking=True,
     prompts=prompts,
     reset_seed_before_each_response=True,
+    seed=1,
+    max_new_tokens=2000,
 )

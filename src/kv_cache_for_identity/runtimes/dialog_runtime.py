@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
-from .qwen.qwen_runtime import QwenRuntime
-from .logger.logger import ExperimentLogger
-from .logger.log_event import LogEvent
+from ..qwen.qwen_runtime import QwenRuntime
+from ..logger.logger import ExperimentLogger
+from ..logger.log_event import LogEvent
 
 
 @dataclass
@@ -12,7 +12,6 @@ class DialogRuntime:
     intro_prompt: str
     first_speaker_prompt: str
     final_prompt: str
-    reset_seed_before_each_response: bool
     stateless_qwen_first: bool
     logger: ExperimentLogger
     runtime_list: list[QwenRuntime] = field(init=False)
@@ -25,7 +24,6 @@ class DialogRuntime:
 
     def start_automated_dialog(self) -> None:
         print('For exit type "/exit", for tokens type "/tokens"')
-        self._set_seeds()
 
         self._moderators_turn(prompt=self.intro_prompt, dialog_round=0)
         
@@ -55,9 +53,14 @@ class DialogRuntime:
         for dialog_round in range(self.rounds_amount):
             answer = self._do_dialogue_turn(answer=answer, dialog_round=dialog_round+1)
 
-        self._moderators_turn(prompt=self.final_prompt, dialog_round=self.rounds_amount+1)
+        self._moderators_turn(prompt=self.final_prompt, dialog_round=self.rounds_amount+1, pre_prompt=self._extract_public_answer(answer))
 
-    def _moderators_turn(self, prompt: str, dialog_round: int) -> str:
+    def _moderators_turn(self, prompt: str, dialog_round: int, pre_prompt: str | None = None) -> str:
+        if pre_prompt is not None:
+            composite_prompt = f'{pre_prompt}\n\n\nОтвет собеседника закончен. Дальше следует уже реплика модератора дискуссии:\n\n\n{prompt}'
+        else:
+            composite_prompt = prompt
+
         event = LogEvent(
             type='event',
             step=dialog_round,
@@ -87,28 +90,24 @@ class DialogRuntime:
             speaker='Moderator',
             receiver=self.runtime_list[1].name,
             input='',
-            raw_output=prompt,
-            public_output=prompt,
+            raw_output=composite_prompt,
+            public_output=composite_prompt,
         )
         self.logger.log(event=event)
 
-        answer = self.runtime_list[1].answer_the_prompt(prompt=prompt)
+        answer = self.runtime_list[1].answer_the_prompt(prompt=composite_prompt)
         event = LogEvent(
             type='event',
             step=dialog_round,
             speaker=self.runtime_list[1].name,
             receiver='Moderator',
-            input=prompt,
+            input=composite_prompt,
             raw_output=answer,
             public_output=self._extract_public_answer(answer),
         )
         self.logger.log(event=event)
 
         return answer
-
-    def _set_seeds(self) -> None:
-        self.stateless_qwen_runtime.reset_seed_before_each_response = self.reset_seed_before_each_response
-        self.stateful_qwen_runtime.reset_seed_before_each_response = self.reset_seed_before_each_response
 
     def _do_dialogue_turn(self, answer: str, dialog_round: int) -> str:
         public_answer = self._extract_public_answer(answer)

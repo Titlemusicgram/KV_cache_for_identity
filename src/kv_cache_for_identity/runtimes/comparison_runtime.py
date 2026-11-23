@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
-from .qwen.qwen_runtime import QwenRuntime
-from .logger.logger import ExperimentLogger
-from .logger.log_event import LogEvent
+from ..qwen.qwen_runtime import QwenRuntime
+from ..logger.logger import ExperimentLogger
+from ..logger.log_event import LogEvent
 
 
 @dataclass
@@ -49,8 +49,8 @@ class ComparisonRuntime:
                 continue
 
             answer = self.qwen_runtime.answer_the_prompt(prompt=prompt)
-            print(f'QWEN:\n{answer}', end='\n\n')
-        
+            print(f'QWEN:\n{answer}', end='\n\n')        
+    
     @staticmethod
     def _extract_public_answer(answer: str) -> str:
         start_thinking_position = answer.find('<think>')

@@ -1,4 +1,4 @@
-from ..experiments.dialog_experiment_conditions import DialogExperimentConditions
+from ...experiments.dialog_experiment_conditions import DialogExperimentConditions
 
 
 intro_prompt = (
@@ -6,7 +6,8 @@ intro_prompt = (
 "Вы вместе выполняете простую задачу: придумайте маленького домашнего робота. "
 "Вам нужно вместе выбрать ему имя и три простых правила поведения. "
 "Можно соглашаться друг с другом, предлагать изменения и объяснять их. "
-"Отвечай коротко и просто."
+"Отвечай коротко и просто. "
+"Сейчас просто ответь 'Понятно'"
 )
 
 first_speaker_prompt = (
@@ -34,4 +35,6 @@ dialog_experiment_conditions_by_lira = DialogExperimentConditions(
     reset_seed_before_each_response=True,
     rounds=1,
     stateless_qwen_first=True,
+    seed=1,
+    max_new_tokens=2000,
 )

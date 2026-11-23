@@ -9,3 +9,5 @@ class ComparisonExperimentConditions:
     enable_thinking: bool
     prompts: list[str]
     reset_seed_before_each_response: bool
+    seed: int
+    max_new_tokens: int

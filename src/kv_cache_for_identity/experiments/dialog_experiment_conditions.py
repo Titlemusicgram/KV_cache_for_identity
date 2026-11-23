@@ -13,3 +13,5 @@ class DialogExperimentConditions:
     reset_seed_before_each_response: bool
     rounds: int
     stateless_qwen_first: bool
+    seed: int
+    max_new_tokens: int
