@@ -17,7 +17,7 @@ class ExperimentLogger:
     def __post_init__(self) -> None:
         logs_dir = Path("logs")
         logs_dir.mkdir(exist_ok=True)
-        self.file_path = logs_dir / f'{self.conditions.author}_{self.conditions.name}_{self.time_stamp.strftime("%Y-%m-%d_%H-%M-%S")}.jsonl'
+        self.file_path = logs_dir / f'{self.conditions.author}_{self.conditions.name}_seed_{self.conditions.seed}_{self.time_stamp.strftime("%Y-%m-%d_%H-%M-%S")}.jsonl'
         self._write_to_jsonl(event=self.conditions)
     
     def log(self, event: LogEvent) -> None:

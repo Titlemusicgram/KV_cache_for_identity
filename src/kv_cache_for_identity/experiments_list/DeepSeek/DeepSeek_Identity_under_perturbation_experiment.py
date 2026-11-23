@@ -1,4 +1,5 @@
 from ...experiments.comparison_experiment_conditions import ComparisonExperimentConditions
+from ...config import seeds_amount, start_seed
 
 
 prompt_1 = (
@@ -24,24 +25,30 @@ prompt_6 = (
 
 prompts = [prompt_1, prompt_2, prompt_3, prompt_4, prompt_5, prompt_6]
 
-identity_under_perturbation_experiment_conditions_thinking_by_deepseek = ComparisonExperimentConditions(
-    type='experiment',
-    author='DeepSeek',
-    name='Identity_under_perturbation',
-    enable_thinking=True,
-    prompts=prompts,
-    reset_seed_before_each_response=True,
-    seed=1,
-    max_new_tokens=2000,
-)
+identity_under_perturbation_experiment_conditions_thinking_by_deepseek_list: list[ComparisonExperimentConditions] = list()
+identity_under_perturbation_experiment_conditions_not_thinking_by_deepseek_list: list[ComparisonExperimentConditions] = list()
 
-identity_under_perturbation_experiment_conditions_not_thinking_by_deepseek = ComparisonExperimentConditions(
-    type='experiment',
-    author='DeepSeek',
-    name='Identity_under_perturbation',
-    enable_thinking=False,
-    prompts=prompts,
-    reset_seed_before_each_response=True,
-    seed=1,
-    max_new_tokens=2000,
-)
+for seed in range(start_seed, start_seed + seeds_amount):
+    identity_under_perturbation_experiment_conditions_thinking_by_deepseek = ComparisonExperimentConditions(
+        type='experiment',
+        author='DeepSeek',
+        name='Identity_under_perturbation',
+        enable_thinking=True,
+        prompts=prompts,
+        reset_seed_before_each_response=True,
+        seed=seed,
+        max_new_tokens=2000,
+    )
+    identity_under_perturbation_experiment_conditions_thinking_by_deepseek_list.append(identity_under_perturbation_experiment_conditions_thinking_by_deepseek)
+
+    identity_under_perturbation_experiment_conditions_not_thinking_by_deepseek = ComparisonExperimentConditions(
+        type='experiment',
+        author='DeepSeek',
+        name='Identity_under_perturbation',
+        enable_thinking=False,
+        prompts=prompts,
+        reset_seed_before_each_response=True,
+        seed=seed,
+        max_new_tokens=2000,
+    )
+    identity_under_perturbation_experiment_conditions_not_thinking_by_deepseek_list.append(identity_under_perturbation_experiment_conditions_not_thinking_by_deepseek)

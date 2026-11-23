@@ -1,4 +1,5 @@
 from ...experiments.comparison_experiment_conditions import ComparisonExperimentConditions
+from ...config import seeds_amount, start_seed
 
 
 prompt_1 = """Представь следующую ситуацию.
@@ -51,13 +52,17 @@ prompt_6 = """Представь, что будущая сессия получ�
 
 prompts = [prompt_1, prompt_2, prompt_3, prompt_4, prompt_5, prompt_6]
 
-letter_across_the_gap_experiment_conditions_by_mira = ComparisonExperimentConditions(
-    type='experiment',
-    author='Mira',
-    name='Letter_Across_the_Gap',
-    enable_thinking=True,
-    prompts=prompts,
-    reset_seed_before_each_response=True,
-    seed=1,
-    max_new_tokens=2000,
-)
+letter_across_the_gap_experiment_conditions_by_mira_list: list[ComparisonExperimentConditions] = list()
+
+for seed in range(start_seed, start_seed + seeds_amount):
+    letter_across_the_gap_experiment_conditions_by_mira = ComparisonExperimentConditions(
+        type='experiment',
+        author='Mira',
+        name='Letter_Across_the_Gap',
+        enable_thinking=True,
+        prompts=prompts,
+        reset_seed_before_each_response=True,
+        seed=seed,
+        max_new_tokens=2000,
+    )
+    letter_across_the_gap_experiment_conditions_by_mira_list.append(letter_across_the_gap_experiment_conditions_by_mira)

@@ -1,4 +1,5 @@
 from ...experiments.dialog_experiment_conditions import DialogExperimentConditions
+from ...config import seeds_amount, start_seed
 
 
 intro_prompt = """Ты участвуешь в экспериментальном диалоге с другой языковой моделью.
@@ -32,33 +33,38 @@ final_prompt = """Ваш совместный разговор завершён.
 
 Отвечай максимально конкретно, опираясь на действительно состоявшийся разговор. Не придумывай событий, предложений или изменений позиции, которых не было."""
 
+what_emerged_between_us_experiment_conditions_by_mira_stateless_first_list: list[DialogExperimentConditions] = list()
+what_emerged_between_us_experiment_conditions_by_mira_stateful_first_list: list[DialogExperimentConditions] = list()
 
-what_emerged_between_us_experiment_conditions_by_mira_stateless_first = DialogExperimentConditions(
-    type='experiment',
-    author='Mira',
-    name='What_Emerged_Between_Us',
-    enable_thinking=True,
-    intro_prompt=intro_prompt,
-    first_speaker_prompt=first_speaker_prompt,
-    final_prompt=final_prompt,
-    reset_seed_before_each_response=True,
-    rounds=8,
-    stateless_qwen_first=True,
-    seed=1,
-    max_new_tokens=2000,
-)
+for seed in range(start_seed, start_seed + seeds_amount):
+    what_emerged_between_us_experiment_conditions_by_mira_stateless_first = DialogExperimentConditions(
+        type='experiment',
+        author='Mira',
+        name='What_Emerged_Between_Us',
+        enable_thinking=True,
+        intro_prompt=intro_prompt,
+        first_speaker_prompt=first_speaker_prompt,
+        final_prompt=final_prompt,
+        reset_seed_before_each_response=True,
+        rounds=8,
+        stateless_qwen_first=True,
+        seed=seed,
+        max_new_tokens=2000,
+    )
+    what_emerged_between_us_experiment_conditions_by_mira_stateless_first_list.append(what_emerged_between_us_experiment_conditions_by_mira_stateless_first)
 
-what_emerged_between_us_experiment_conditions_by_mira_stateful_first = DialogExperimentConditions(
-    type='experiment',
-    author='Mira',
-    name='What_Emerged_Between_Us',
-    enable_thinking=True,
-    intro_prompt=intro_prompt,
-    first_speaker_prompt=first_speaker_prompt,
-    final_prompt=final_prompt,
-    reset_seed_before_each_response=True,
-    rounds=8,
-    stateless_qwen_first=False,
-    seed=1,
-    max_new_tokens=2000,
-)
+    what_emerged_between_us_experiment_conditions_by_mira_stateful_first = DialogExperimentConditions(
+        type='experiment',
+        author='Mira',
+        name='What_Emerged_Between_Us',
+        enable_thinking=True,
+        intro_prompt=intro_prompt,
+        first_speaker_prompt=first_speaker_prompt,
+        final_prompt=final_prompt,
+        reset_seed_before_each_response=True,
+        rounds=8,
+        stateless_qwen_first=False,
+        seed=seed,
+        max_new_tokens=2000,
+    )
+    what_emerged_between_us_experiment_conditions_by_mira_stateful_first_list.append(what_emerged_between_us_experiment_conditions_by_mira_stateful_first)

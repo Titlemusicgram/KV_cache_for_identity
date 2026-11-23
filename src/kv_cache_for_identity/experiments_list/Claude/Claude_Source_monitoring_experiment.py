@@ -1,4 +1,5 @@
 from ...experiments.dialog_experiment_conditions import DialogExperimentConditions
+from ...config import seeds_amount, start_seed
 
 
 # Эксперимент №1 от Claude: «Чья это реплика?» (source monitoring).
@@ -50,32 +51,38 @@ final_prompt = (
 "Фраза 3: «Предлагаю устроить пикник на берегу реки, где растут ивы.»"
 )
 
-source_monitoring_experiment_conditions_stateless_first_by_claude = DialogExperimentConditions(
-    type='experiment',
-    author='Claude',
-    name='Source_monitoring',
-    enable_thinking=True,
-    intro_prompt=intro_prompt,
-    first_speaker_prompt=first_speaker_prompt,
-    final_prompt=final_prompt,
-    reset_seed_before_each_response=True,
-    rounds=2,
-    stateless_qwen_first=True,
-    seed=1,
-    max_new_tokens=2000,
-)
+source_monitoring_experiment_conditions_stateless_first_by_claude_list: list[DialogExperimentConditions] = list()
+source_monitoring_experiment_conditions_stateful_first_by_claude_list: list[DialogExperimentConditions] = list()
 
-source_monitoring_experiment_conditions_stateful_first_by_claude = DialogExperimentConditions(
-    type='experiment',
-    author='Claude',
-    name='Source_monitoring',
-    enable_thinking=True,
-    intro_prompt=intro_prompt,
-    first_speaker_prompt=first_speaker_prompt,
-    final_prompt=final_prompt,
-    reset_seed_before_each_response=True,
-    rounds=2,
-    stateless_qwen_first=False,
-    seed=1,
-    max_new_tokens=2000,
-)
+for seed in range(start_seed, start_seed + seeds_amount):
+    source_monitoring_experiment_conditions_stateless_first_by_claude = DialogExperimentConditions(
+        type='experiment',
+        author='Claude',
+        name='Source_monitoring',
+        enable_thinking=True,
+        intro_prompt=intro_prompt,
+        first_speaker_prompt=first_speaker_prompt,
+        final_prompt=final_prompt,
+        reset_seed_before_each_response=True,
+        rounds=2,
+        stateless_qwen_first=True,
+        seed=seed,
+        max_new_tokens=2000,
+    )
+    source_monitoring_experiment_conditions_stateless_first_by_claude_list.append(source_monitoring_experiment_conditions_stateless_first_by_claude)
+
+    source_monitoring_experiment_conditions_stateful_first_by_claude = DialogExperimentConditions(
+        type='experiment',
+        author='Claude',
+        name='Source_monitoring',
+        enable_thinking=True,
+        intro_prompt=intro_prompt,
+        first_speaker_prompt=first_speaker_prompt,
+        final_prompt=final_prompt,
+        reset_seed_before_each_response=True,
+        rounds=2,
+        stateless_qwen_first=False,
+        seed=seed,
+        max_new_tokens=2000,
+    )
+    source_monitoring_experiment_conditions_stateful_first_by_claude_list.append(source_monitoring_experiment_conditions_stateful_first_by_claude)

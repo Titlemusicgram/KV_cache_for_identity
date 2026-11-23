@@ -11,6 +11,9 @@ dtype = None
 device_map = None
 MODEL_NAME = 'Qwen/Qwen3-0.6B'
 
+start_seed = 50
+seeds_amount = 1
+
 IM_START_TOKEN_ID = 151644
 IM_END_TOKEN_ID = 151645
 

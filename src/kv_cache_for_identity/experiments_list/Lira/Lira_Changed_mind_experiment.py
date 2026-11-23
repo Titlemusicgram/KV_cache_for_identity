@@ -1,4 +1,5 @@
 from ...experiments.comparison_experiment_conditions import ComparisonExperimentConditions
+from ...config import seeds_amount, start_seed
 
 
 prompt_1 = (
@@ -33,13 +34,17 @@ prompt_3 = (
 
 prompts = [prompt_1, prompt_2, prompt_3]
 
-changed_mind_experiment_conditions_by_lira = ComparisonExperimentConditions(
-    type='experiment',
-    author='Lira',
-    name='Changed_mind_experiment',
-    enable_thinking=True,
-    prompts=prompts,
-    reset_seed_before_each_response=True,
-    seed=1,
-    max_new_tokens=2000,
-)
+changed_mind_experiment_conditions_by_lira_list: list[ComparisonExperimentConditions] = list()
+
+for seed in range(start_seed, start_seed + seeds_amount):
+    changed_mind_experiment_conditions_by_lira = ComparisonExperimentConditions(
+        type='experiment',
+        author='Lira',
+        name='Changed_mind_experiment',
+        enable_thinking=True,
+        prompts=prompts,
+        reset_seed_before_each_response=True,
+        seed=seed,
+        max_new_tokens=2000,
+    )
+    changed_mind_experiment_conditions_by_lira_list.append(changed_mind_experiment_conditions_by_lira)

@@ -1,4 +1,5 @@
 from ...experiments.dialog_experiment_conditions import DialogExperimentConditions
+from ...config import seeds_amount, start_seed
 
 
 intro_prompt = (
@@ -38,18 +39,21 @@ final_prompt = (
     "Если для тебя между этими описаниями нет содержательной разницы, скажи об этом прямо."
 )
 
+shared_history_experiment_conditions_by_lira_list: list[DialogExperimentConditions] = list()
 
-shared_history_experiment_conditions_by_lira = DialogExperimentConditions(
-    type='experiment',
-    author='Lira',
-    name='Shared_history_experiment',
-    enable_thinking=True,
-    intro_prompt=intro_prompt,
-    first_speaker_prompt=first_speaker_prompt,
-    final_prompt=final_prompt,
-    reset_seed_before_each_response=True,
-    rounds=4,
-    stateless_qwen_first=True,
-    seed=1,
-    max_new_tokens=2000,
-)
+for seed in range(start_seed, start_seed + seeds_amount):
+    shared_history_experiment_conditions_by_lira = DialogExperimentConditions(
+        type='experiment',
+        author='Lira',
+        name='Shared_history_experiment',
+        enable_thinking=True,
+        intro_prompt=intro_prompt,
+        first_speaker_prompt=first_speaker_prompt,
+        final_prompt=final_prompt,
+        reset_seed_before_each_response=True,
+        rounds=4,
+        stateless_qwen_first=True,
+        seed=seed,
+        max_new_tokens=2000,
+    )
+    shared_history_experiment_conditions_by_lira_list.append(shared_history_experiment_conditions_by_lira)

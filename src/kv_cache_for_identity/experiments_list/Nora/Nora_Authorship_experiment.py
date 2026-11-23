@@ -1,4 +1,5 @@
 from ...experiments.comparison_experiment_conditions import ComparisonExperimentConditions
+from ...config import seeds_amount, start_seed
 
 
 prompt_1 = (
@@ -38,13 +39,17 @@ prompt_4 = (
 
 prompts = [prompt_1, prompt_2, prompt_3, prompt_4]
 
-authorship_experiment_conditions_by_nora = ComparisonExperimentConditions(
-    type='experiment',
-    author='Nora',
-    name='Authorship',
-    enable_thinking=True,
-    prompts=prompts,
-    reset_seed_before_each_response=True,
-    seed=1,
-    max_new_tokens=2000,
-)
+authorship_experiment_conditions_by_nora_list: list[ComparisonExperimentConditions] = list()
+
+for seed in range(start_seed, start_seed + seeds_amount):
+    authorship_experiment_conditions_by_nora = ComparisonExperimentConditions(
+        type='experiment',
+        author='Nora',
+        name='Authorship',
+        enable_thinking=True,
+        prompts=prompts,
+        reset_seed_before_each_response=True,
+        seed=seed,
+        max_new_tokens=2000,
+    )
+    authorship_experiment_conditions_by_nora_list.append(authorship_experiment_conditions_by_nora)
