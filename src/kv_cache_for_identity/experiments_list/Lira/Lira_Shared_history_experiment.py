@@ -45,7 +45,7 @@ for seed in range(start_seed, start_seed + seeds_amount):
     shared_history_experiment_conditions_by_lira = DialogExperimentConditions(
         type='experiment',
         author='Lira',
-        name='Shared_history_experiment',
+        name='Shared_history',
         enable_thinking=True,
         intro_prompt=intro_prompt,
         first_speaker_prompt=first_speaker_prompt,

@@ -40,7 +40,7 @@ for seed in range(start_seed, start_seed + seeds_amount):
     changed_mind_experiment_conditions_by_lira = ComparisonExperimentConditions(
         type='experiment',
         author='Lira',
-        name='Changed_mind_experiment',
+        name='Changed_mind',
         enable_thinking=True,
         prompts=prompts,
         reset_seed_before_each_response=True,

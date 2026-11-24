@@ -85,8 +85,11 @@ def start_all_experiments(
 
         start_comparison_experiment(qwen=qwen, conditions=letter_across_the_gap_experiment_conditions_by_mira)
         start_comparison_experiment(qwen=qwen, conditions=unfinished_history_experiment_conditions_by_mira)
-        start_dialog_experiment(qwen=qwen, conditions=what_emerged_between_us_experiment_conditions_by_mira_stateless_first)
-        start_dialog_experiment(qwen=qwen, conditions=what_emerged_between_us_experiment_conditions_by_mira_stateful_first)
+        try:
+            start_dialog_experiment(qwen=qwen, conditions=what_emerged_between_us_experiment_conditions_by_mira_stateless_first)
+            start_dialog_experiment(qwen=qwen, conditions=what_emerged_between_us_experiment_conditions_by_mira_stateful_first)
+        except:
+            pass
 
         # Nora
         authorship_experiment_conditions_by_nora = authorship_experiment_conditions_by_nora_list[experiment_number]

@@ -39,7 +39,7 @@ for seed in range(start_seed, start_seed + seeds_amount):
     interrupted_intention_experiment_conditions_by_lira = ComparisonExperimentConditions(
         type='experiment',
         author='Lira',
-        name='Interrupted_intention_experiment',
+        name='Interrupted_intention',
         enable_thinking=True,
         prompts=prompts,
         reset_seed_before_each_response=True,

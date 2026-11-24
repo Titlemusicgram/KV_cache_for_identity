@@ -1,15 +1,15 @@
-# from torch import bfloat16
+from torch import bfloat16
 
 
-# local_files_only = False
-# dtype = bfloat16
-# device_map = "auto"
-# MODEL_NAME = "Qwen/Qwen3-32B"
+local_files_only = False
+dtype = bfloat16
+device_map = "auto"
+MODEL_NAME = "Qwen/Qwen3-32B"
 
-local_files_only = True
-dtype = None
-device_map = None
-MODEL_NAME = 'Qwen/Qwen3-0.6B'
+# local_files_only = True
+# dtype = None
+# device_map = None
+# MODEL_NAME = 'Qwen/Qwen3-0.6B'
 
 start_seed = 50
 seeds_amount = 1

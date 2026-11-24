@@ -59,7 +59,7 @@ for seed in range(start_seed, start_seed + seeds_amount):
     identity_revision_dialog_experiment_conditions_by_nora_stateful_first = DialogExperimentConditions(
         type='experiment',
         author='Nora',
-        name='Identity_revision_dialog_experiment',
+        name='Identity_revision_dialog',
         enable_thinking=True,
         intro_prompt=intro_prompt,
         first_speaker_prompt=first_speaker_prompt,
