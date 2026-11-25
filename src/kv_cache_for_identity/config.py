@@ -11,8 +11,8 @@ MODEL_NAME = "Qwen/Qwen3-32B"
 # device_map = None
 # MODEL_NAME = 'Qwen/Qwen3-0.6B'
 
-start_seed = 50
-seeds_amount = 1
+start_seed = 1
+seeds_amount = 5
 
 IM_START_TOKEN_ID = 151644
 IM_END_TOKEN_ID = 151645

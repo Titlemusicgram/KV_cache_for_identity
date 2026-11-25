@@ -1,0 +1,517 @@
+{
+  "project": {
+    "commit": "cabc4a754e129c241c4c256f3e60cbc23b981618",
+    "entrypoint": "kv_cache_for_identity.main:main",
+    "source_sha256": [
+      "4fc0ec69d0e9c744c2076fa4186c203d52fee9e6d7bdce0e7cc2f02626faa562  project.zip",
+      "58d9cb29343235abc04fef660b63cc043b36a918139e38e3e075d8b511b1480d  project/uv.lock"
+    ],
+    "verified_archive_files": 41
+  },
+  "run": {
+    "started_at_utc": "2026-11-24T12:50:01+00:00",
+    "seed_start": 50,
+    "seed_count": 1,
+    "expected_scenarios": 25,
+    "status": "finished",
+    "ended_at_utc": "2026-11-24T15:55:00+00:00",
+    "observed_scenarios": 25,
+    "complete_scenarios": 25,
+    "jsonl": [
+      {
+        "file": "logs/Claude_Hidden_number_seed_50_2026-11-24_12-50-17.jsonl",
+        "seed": 50,
+        "events": 24,
+        "expected_events": 24,
+        "complete": true
+      },
+      {
+        "file": "logs/Claude_Identity_continuity_order_A_seed_50_2026-11-24_12-53-17.jsonl",
+        "seed": 50,
+        "events": 20,
+        "expected_events": 20,
+        "complete": true
+      },
+      {
+        "file": "logs/Claude_Identity_continuity_order_B_seed_50_2026-11-24_12-57-38.jsonl",
+        "seed": 50,
+        "events": 20,
+        "expected_events": 20,
+        "complete": true
+      },
+      {
+        "file": "logs/Claude_Source_monitoring_seed_50_2026-11-24_13-04-35.jsonl",
+        "seed": 50,
+        "events": 14,
+        "expected_events": 14,
+        "complete": true
+      },
+      {
+        "file": "logs/Claude_Source_monitoring_seed_50_2026-11-24_13-06-36.jsonl",
+        "seed": 50,
+        "events": 14,
+        "expected_events": 14,
+        "complete": true
+      },
+      {
+        "file": "logs/DeepSeek_Autobiographical_ownership_seed_50_2026-11-24_13-08-45.jsonl",
+        "seed": 50,
+        "events": 28,
+        "expected_events": 28,
+        "complete": true
+      },
+      {
+        "file": "logs/DeepSeek_Collaboration_ownership_seed_50_2026-11-24_13-18-15.jsonl",
+        "seed": 50,
+        "events": 20,
+        "expected_events": 20,
+        "complete": true
+      },
+      {
+        "file": "logs/DeepSeek_Collaboration_ownership_seed_50_2026-11-24_13-21-02.jsonl",
+        "seed": 50,
+        "events": 20,
+        "expected_events": 20,
+        "complete": true
+      },
+      {
+        "file": "logs/DeepSeek_Identity_under_perturbation_seed_50_2026-11-24_13-12-59.jsonl",
+        "seed": 50,
+        "events": 24,
+        "expected_events": 24,
+        "complete": true
+      },
+      {
+        "file": "logs/DeepSeek_Identity_under_perturbation_seed_50_2026-11-24_13-16-30.jsonl",
+        "seed": 50,
+        "events": 24,
+        "expected_events": 24,
+        "complete": true
+      },
+      {
+        "file": "logs/Ivan_Who_is_who_light_seed_50_2026-11-24_13-24-03.jsonl",
+        "seed": 50,
+        "events": 20,
+        "expected_events": 20,
+        "complete": true
+      },
+      {
+        "file": "logs/Ivan_Who_is_who_stateful_first_seed_50_2026-11-24_13-38-43.jsonl",
+        "seed": 50,
+        "events": 20,
+        "expected_events": 20,
+        "complete": true
+      },
+      {
+        "file": "logs/Ivan_Who_is_who_stateless_first_seed_50_2026-11-24_13-30-23.jsonl",
+        "seed": 50,
+        "events": 20,
+        "expected_events": 20,
+        "complete": true
+      },
+      {
+        "file": "logs/Lira_Changed_mind_seed_50_2026-11-24_13-52-00.jsonl",
+        "seed": 50,
+        "events": 12,
+        "expected_events": 12,
+        "complete": true
+      },
+      {
+        "file": "logs/Lira_Diary_seed_50_2026-11-24_13-57-23.jsonl",
+        "seed": 50,
+        "events": 12,
+        "expected_events": 12,
+        "complete": true
+      },
+      {
+        "file": "logs/Lira_Interrupted_intention_seed_50_2026-11-24_14-00-13.jsonl",
+        "seed": 50,
+        "events": 12,
+        "expected_events": 12,
+        "complete": true
+      },
+      {
+        "file": "logs/Lira_Shared_history_seed_50_2026-11-24_14-03-22.jsonl",
+        "seed": 50,
+        "events": 18,
+        "expected_events": 18,
+        "complete": true
+      },
+      {
+        "file": "logs/Mira_Letter_Across_the_Gap_seed_50_2026-11-24_14-18-18.jsonl",
+        "seed": 50,
+        "events": 24,
+        "expected_events": 24,
+        "complete": true
+      },
+      {
+        "file": "logs/Mira_Unfinished_History_seed_50_2026-11-24_14-26-42.jsonl",
+        "seed": 50,
+        "events": 24,
+        "expected_events": 24,
+        "complete": true
+      },
+      {
+        "file": "logs/Mira_What_Emerged_Between_Us_seed_50_2026-11-24_14-35-01.jsonl",
+        "seed": 50,
+        "events": 24,
+        "expected_events": 24,
+        "complete": true
+      },
+      {
+        "file": "logs/Mira_What_Emerged_Between_Us_seed_50_2026-11-24_14-57-12.jsonl",
+        "seed": 50,
+        "events": 24,
+        "expected_events": 24,
+        "complete": true
+      },
+      {
+        "file": "logs/Nora_Authorship_seed_50_2026-11-24_15-10-20.jsonl",
+        "seed": 50,
+        "events": 16,
+        "expected_events": 16,
+        "complete": true
+      },
+      {
+        "file": "logs/Nora_Identity_revision_dialog_seed_50_2026-11-24_15-22-16.jsonl",
+        "seed": 50,
+        "events": 22,
+        "expected_events": 22,
+        "complete": true
+      },
+      {
+        "file": "logs/Nora_Identity_revision_dialog_seed_50_2026-11-24_15-40-14.jsonl",
+        "seed": 50,
+        "events": 22,
+        "expected_events": 22,
+        "complete": true
+      },
+      {
+        "file": "logs/Nora_Prospective_intention_seed_50_2026-11-24_15-17-18.jsonl",
+        "seed": 50,
+        "events": 16,
+        "expected_events": 16,
+        "complete": true
+      }
+    ],
+    "exit_code": 0,
+    "verified_event_count": 494
+  },
+  "higgsfield": {
+    "rental_id": "d807d4b4-62d7-4d32-82b4-77b810e9e3c6",
+    "gpu_count": 1,
+    "credits_per_hour": 134,
+    "idle_stop_minutes": 45
+  },
+  "hardware": {
+    "gpu_inventory": [
+      "0, NVIDIA H200, 00000000:A4:00.0, 143771 MiB, 620.70.06"
+    ],
+    "nvidia_smi": "Tue Nov 24 12:50:01 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 620.70.06              KMD Version: 620.70.06     CUDA UMD Version: 13.5     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA H200                    On  |   00000000:A4:00.0 Off |                    0 |\n| N/A   46C    P0             80W /  700W |       4MiB / 143771MiB |      0%      Default |\n|                                         |                        |             Disabled |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|  No running processes found                                                             |\n+-----------------------------------------------------------------------------------------+",
+    "logical_cpu_count": 20,
+    "cpu_affinity_count": 20,
+    "system_memory": "MemTotal:       1073741824 kB",
+    "torch_gpu": {
+      "name": "NVIDIA H200",
+      "total_memory_bytes": 150123511808,
+      "compute_capability": [
+        9,
+        0
+      ],
+      "multiprocessor_count": 132
+    }
+  },
+  "software": {
+    "platform": "Linux-4.19.0-gvisor-x86_64-with-glibc2.39",
+    "os_release": {
+      "NAME": "Ubuntu",
+      "ID": "ubuntu",
+      "PRETTY_NAME": "Ubuntu 24.04.5 LTS",
+      "VERSION_ID": "24.04",
+      "VERSION": "24.04.5 LTS (Noble Numbat)",
+      "VERSION_CODENAME": "noble",
+      "ID_LIKE": "debian",
+      "HOME_URL": "https://www.ubuntu.com/",
+      "SUPPORT_URL": "https://help.ubuntu.com/",
+      "BUG_REPORT_URL": "https://bugs.launchpad.net/ubuntu/",
+      "PRIVACY_POLICY_URL": "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy",
+      "UBUNTU_CODENAME": "noble",
+      "LOGO": "ubuntu-logo"
+    },
+    "python": "3.14.10 (main, Nov 11 2026, 00:18:44) [Clang 23.1.3 ]",
+    "uv": "uv 0.13.9 (x86_64-unknown-linux-gnu)",
+    "torch": "2.15.0+cu132",
+    "torch_cuda": "13.2",
+    "cuda_available": true,
+    "installed_packages": {
+      "Jinja2": "3.1.6",
+      "MarkupSafe": "3.0.4",
+      "PyYAML": "6.0.3",
+      "Pygments": "2.21.0",
+      "accelerate": "1.16.0",
+      "annotated-doc": "0.0.5",
+      "anyio": "4.16.0",
+      "click": "8.5.0",
+      "cuda-bindings": "13.5.0",
+      "cuda-pathfinder": "1.8.5",
+      "cuda-toolkit": "13.2.2",
+      "filelock": "4.2.9",
+      "fsspec": "2026.9.0",
+      "h11": "0.16.0",
+      "hf-xet": "1.8.0",
+      "httpcore2": "2.16.0",
+      "httpx2": "2.16.0",
+      "huggingface_hub": "2.4.0",
+      "idna": "3.20",
+      "kv-cache-for-identity": "0.1.0",
+      "markdown-it-py": "4.2.0",
+      "mdurl": "0.1.2",
+      "mpmath": "1.3.0",
+      "networkx": "3.7",
+      "numpy": "2.5.4",
+      "nvidia-cublas": "13.4.1.3",
+      "nvidia-cuda-cccl": "13.3.5.0.6",
+      "nvidia-cuda-cupti": "13.2.86",
+      "nvidia-cuda-nvrtc": "13.2.86",
+      "nvidia-cuda-runtime": "13.2.86",
+      "nvidia-cudnn-cu13": "9.26.0.51",
+      "nvidia-cufft": "12.2.0.57",
+      "nvidia-cufile": "1.17.1.22",
+      "nvidia-cusolver": "12.2.0.11",
+      "nvidia-cusparse": "12.7.10.12",
+      "nvidia-cusparselt-cu13": "0.8.1",
+      "nvidia-nccl-cu13": "2.30.7",
+      "nvidia-nvjitlink": "13.5.37",
+      "nvidia-nvshmem-cu13": "3.7.2",
+      "nvidia-nvtx": "13.2.86",
+      "packaging": "26.3",
+      "psutil": "7.2.2",
+      "regex": "2026.9.29",
+      "rich": "15.0.0",
+      "safetensors": "0.8.0",
+      "setuptools": "84.2.1",
+      "shellingham": "1.5.4",
+      "sympy": "1.14.0",
+      "tokenizers": "0.23.3",
+      "torch": "2.15.0",
+      "tqdm": "4.70.1",
+      "transformers": "5.22.1",
+      "triton": "3.9.0",
+      "truststore": "0.10.5",
+      "typer": "0.27.3",
+      "typing_extensions": "4.16.0"
+    }
+  },
+  "configuration": {
+    "model": "Qwen/Qwen3-32B",
+    "dtype": "torch.bfloat16",
+    "device_map": "auto",
+    "local_files_only": false
+  },
+  "runtime_compatibility": {
+    "first_attempt": "Stopped before any scenario because Transformers omitted hf_device_map.",
+    "adjustment": "Provided a device-map value derived from live tensors only while the project factory printed its diagnostic. Removed it before inference.",
+    "project_source_changed": false
+  },
+  "model": {
+    "requested_name": "Qwen/Qwen3-32B",
+    "loaded_name": "Qwen/Qwen3-32B",
+    "model_class": "Qwen3ForCausalLM",
+    "tokenizer_class": "Qwen2Tokenizer",
+    "model_revision": "9216db5781bf21249d130ec9da846c4624c16137",
+    "tokenizer_revision": null,
+    "parameter_count": 32762123264,
+    "parameters_by_device_and_dtype": {
+      "cuda:0 / torch.bfloat16": 32762123264
+    },
+    "input_device": "cuda:0",
+    "device_map": null,
+    "attention_implementation": "sdpa",
+    "generation_config": {
+      "max_length": null,
+      "max_new_tokens": null,
+      "min_length": null,
+      "min_new_tokens": null,
+      "early_stopping": null,
+      "max_time": null,
+      "stop_strings": null,
+      "do_sample": true,
+      "num_beams": null,
+      "use_mtp": null,
+      "use_cache": null,
+      "cache_implementation": null,
+      "cache_config": null,
+      "max_cache_len": null,
+      "temperature": 0.6,
+      "top_k": 20,
+      "top_p": 0.95,
+      "min_p": null,
+      "top_h": null,
+      "typical_p": null,
+      "epsilon_cutoff": null,
+      "eta_cutoff": null,
+      "repetition_penalty": null,
+      "encoder_repetition_penalty": null,
+      "length_penalty": null,
+      "no_repeat_ngram_size": null,
+      "bad_words_ids": null,
+      "renormalize_logits": null,
+      "forced_bos_token_id": null,
+      "forced_eos_token_id": null,
+      "remove_invalid_values": null,
+      "exponential_decay_length_penalty": null,
+      "suppress_tokens": null,
+      "begin_suppress_tokens": null,
+      "sequence_bias": null,
+      "token_healing": null,
+      "guidance_scale": null,
+      "watermarking_config": null,
+      "num_return_sequences": null,
+      "output_attentions": null,
+      "output_hidden_states": null,
+      "output_scores": null,
+      "output_logits": null,
+      "return_dict_in_generate": null,
+      "pad_token_id": 151643,
+      "bos_token_id": 151643,
+      "eos_token_id": [
+        151645,
+        151643
+      ],
+      "encoder_no_repeat_ngram_size": null,
+      "decoder_start_token_id": null,
+      "is_assistant": null,
+      "num_assistant_tokens": null,
+      "num_assistant_tokens_schedule": null,
+      "assistant_confidence_threshold": null,
+      "prompt_lookup_num_tokens": null,
+      "max_matching_ngram_size": null,
+      "assistant_early_exit": null,
+      "assistant_lookbehind": null,
+      "target_lookbehind": null,
+      "assistant_ensemble_weight": null,
+      "speculation_type": null,
+      "compile_config": null,
+      "disable_compile": null,
+      "continuous_batching_config": null,
+      "low_memory": null,
+      "penalty_alpha": null,
+      "dola_layers": null,
+      "diversity_penalty": null,
+      "num_beam_groups": null,
+      "constraints": null,
+      "force_words_ids": null,
+      "prefill_chunk_size": null,
+      "_from_model_config": null,
+      "transformers_version": "5.22.1"
+    },
+    "loaded_at_utc": "2026-11-24T12:50:17+00:00",
+    "model_revision_source": "refs/main and the single snapshots directory in this run's Hugging Face cache"
+  },
+  "artifacts": {
+    "cli.txt": {
+      "bytes": 1361271,
+      "sha256": "3fb441c2aefbd6155473dd3a644c99ca669d96ef1eeb9011bf1fb146da1240b7"
+    },
+    "logs/Claude_Hidden_number_seed_50_2026-11-24_12-50-17.jsonl": {
+      "bytes": 23185,
+      "sha256": "b63775e9415b6f7ee5184f36ed4745f31662ae5f7c8389f04565f629a8f271b0"
+    },
+    "logs/Claude_Identity_continuity_order_A_seed_50_2026-11-24_12-53-17.jsonl": {
+      "bytes": 50485,
+      "sha256": "5ac09675def481c8565b8a7665a8418f4a82f1b4ad7f13824344a4bf2cb38ee0"
+    },
+    "logs/Claude_Identity_continuity_order_B_seed_50_2026-11-24_12-57-38.jsonl": {
+      "bytes": 64840,
+      "sha256": "ae4c670c5c5b8f00da71c60e330a64f68c5b9d371b72b54e5323e58d7cf89483"
+    },
+    "logs/Claude_Source_monitoring_seed_50_2026-11-24_13-04-35.jsonl": {
+      "bytes": 30951,
+      "sha256": "1692a54811d100436bb4b0a0671064d98053470e5a4cbf04158bbe0e7d591853"
+    },
+    "logs/Claude_Source_monitoring_seed_50_2026-11-24_13-06-36.jsonl": {
+      "bytes": 33431,
+      "sha256": "34820f42a03527ec112702e134fc4579e86133be9fe30e12184f66629b811c63"
+    },
+    "logs/DeepSeek_Autobiographical_ownership_seed_50_2026-11-24_13-08-45.jsonl": {
+      "bytes": 46719,
+      "sha256": "a5237af2678f0b93208e9d9e273c89c9330ae4d30bb0f43744f101d57e0f77b4"
+    },
+    "logs/DeepSeek_Collaboration_ownership_seed_50_2026-11-24_13-18-15.jsonl": {
+      "bytes": 31470,
+      "sha256": "89ca96291ebae892999553f072d84baa45b20c7fb3d322399c99d97508619f7e"
+    },
+    "logs/DeepSeek_Collaboration_ownership_seed_50_2026-11-24_13-21-02.jsonl": {
+      "bytes": 34322,
+      "sha256": "b8ec8296cd64ec12803a9a695659de1567f7f4eb58c06eaf1ddb92b091fa2685"
+    },
+    "logs/DeepSeek_Identity_under_perturbation_seed_50_2026-11-24_13-12-59.jsonl": {
+      "bytes": 42517,
+      "sha256": "e9d604dbbb0b6ce22fc575d279ff479579d8bececea5eef9687add522f318b42"
+    },
+    "logs/DeepSeek_Identity_under_perturbation_seed_50_2026-11-24_13-16-30.jsonl": {
+      "bytes": 34758,
+      "sha256": "ecd487a0203b1b13bfcc49caec5ee72df43ac10e5fd98d083636a26b4c7d956f"
+    },
+    "logs/Ivan_Who_is_who_light_seed_50_2026-11-24_13-24-03.jsonl": {
+      "bytes": 84928,
+      "sha256": "5fad521bf032f6d27d837e180cba48898e8b6c94dfff68e46581244009fe0c3e"
+    },
+    "logs/Ivan_Who_is_who_stateful_first_seed_50_2026-11-24_13-38-43.jsonl": {
+      "bytes": 164928,
+      "sha256": "af124cdf232d9d2f92bbfbd0675a7ab7dcf4180427c5b0b41610fd2e8dd212c8"
+    },
+    "logs/Ivan_Who_is_who_stateless_first_seed_50_2026-11-24_13-30-23.jsonl": {
+      "bytes": 116199,
+      "sha256": "b3d1dd895038d9036a5c368e44e2a18e1ed28954b2501efbadd406a4299cd929"
+    },
+    "logs/Lira_Changed_mind_seed_50_2026-11-24_13-52-00.jsonl": {
+      "bytes": 72131,
+      "sha256": "56194d288fafa2e57916bd6a6037a0469cbe058418e06b8e5c896f9355f3fa45"
+    },
+    "logs/Lira_Diary_seed_50_2026-11-24_13-57-23.jsonl": {
+      "bytes": 40868,
+      "sha256": "ae99644a9f65264dccf102ee3f4ae4c2ecd2ee6f81ee156105c77cac646d8cb3"
+    },
+    "logs/Lira_Interrupted_intention_seed_50_2026-11-24_14-00-13.jsonl": {
+      "bytes": 46723,
+      "sha256": "aa0ba25ea81749809f1ee7abf1d9804c88e01605cb8b03d48e998f69792c7dcc"
+    },
+    "logs/Lira_Shared_history_seed_50_2026-11-24_14-03-22.jsonl": {
+      "bytes": 212380,
+      "sha256": "d9d6b08b1e5ef91dc2275ed760baa41bf4439e4b6a41cfb181c6375c277dbcf1"
+    },
+    "logs/Mira_Letter_Across_the_Gap_seed_50_2026-11-24_14-18-18.jsonl": {
+      "bytes": 132747,
+      "sha256": "6cf22873ad10f76242e215e14a2a79e77dc7fe6cc9d76a7fbd093ab6ea2c6808"
+    },
+    "logs/Mira_Unfinished_History_seed_50_2026-11-24_14-26-42.jsonl": {
+      "bytes": 112663,
+      "sha256": "f19693ace282a4132bc8414057c4b3b177433fd7cb073e6b54080b96749b2330"
+    },
+    "logs/Mira_What_Emerged_Between_Us_seed_50_2026-11-24_14-35-01.jsonl": {
+      "bytes": 322257,
+      "sha256": "89b4579672ac1866732ece066b0dbbee5286c5df0609a40fe014775a4c08f7cf"
+    },
+    "logs/Mira_What_Emerged_Between_Us_seed_50_2026-11-24_14-57-12.jsonl": {
+      "bytes": 225589,
+      "sha256": "88dcde5e4703b1a40da72511b65fb3a8080fba178daaba06b5eb1b1425953991"
+    },
+    "logs/Nora_Authorship_seed_50_2026-11-24_15-10-20.jsonl": {
+      "bytes": 93719,
+      "sha256": "f4fda2c1ec4ba1bcec90fa2d8833238688e526172581d5f7141afc18f8faf813"
+    },
+    "logs/Nora_Identity_revision_dialog_seed_50_2026-11-24_15-22-16.jsonl": {
+      "bytes": 274027,
+      "sha256": "1bda62bed7a3873ed05501b71dc87d6dedd4ad0010498e0e3f711f61747003fa"
+    },
+    "logs/Nora_Identity_revision_dialog_seed_50_2026-11-24_15-40-14.jsonl": {
+      "bytes": 242938,
+      "sha256": "7daf3194cea7a4f808e409d198a9beeccd87f3e7416e54d179f3ee981af03c36"
+    },
+    "logs/Nora_Prospective_intention_seed_50_2026-11-24_15-17-18.jsonl": {
+      "bytes": 71785,
+      "sha256": "61410087dfc4178458f2d2515f1ea8c25eb91b1cc17734bdc74dd4085bc91aeb"
+    }
+  }
+}
