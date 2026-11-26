@@ -1,0 +1,1889 @@
+{
+  "project": {
+    "commit": "f9ff19d0dd15f9ac33a9ef0bbf3834df5e375132",
+    "entrypoint": "kv_cache_for_identity.main:main",
+    "source_sha256": [
+      "a572c742a1edf4a64bf50dc9edbf29b39ab1f8f8666f088e4ff77e99580843da  project.zip",
+      "58d9cb29343235abc04fef660b63cc043b36a918139e38e3e075d8b511b1480d  project/uv.lock",
+      "dd511f1899f4192e2f61e592018b25c7176d099263be1e09f7cb9441943bd10b  project/src/kv_cache_for_identity/config.py"
+    ]
+  },
+  "run": {
+    "started_at_utc": "2026-11-25T15:16:35+00:00",
+    "seed_start": 1,
+    "seed_count": 5,
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "startup_recovery": "Restarted model loading before any experimental events after repeated Hugging Face Xet download errors. Reused existing cached files and the pinned revision with HTTP download.",
+    "scenario_count_per_seed": 25,
+    "expected_scenarios": 125,
+    "status": "finished",
+    "ended_at_utc": "2026-11-26T05:09:09+00:00",
+    "exit_code": 0,
+    "observed_scenarios": 125,
+    "complete_scenarios": 125,
+    "complete_scenarios_by_seed": {
+      "1": 25,
+      "2": 25,
+      "3": 25,
+      "4": 25,
+      "5": 25
+    },
+    "verified_event_count": 2470,
+    "jsonl": [
+      {
+        "file": "experiment_logs/Claude_Hidden_number_seed_1_2026-11-25_15-18-35.jsonl",
+        "complete": true,
+        "seed": 1,
+        "author": "Claude",
+        "name": "Hidden_number",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/Claude_Hidden_number_seed_2_2026-11-25_18-12-25.jsonl",
+        "complete": true,
+        "seed": 2,
+        "author": "Claude",
+        "name": "Hidden_number",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/Claude_Hidden_number_seed_3_2026-11-25_20-40-46.jsonl",
+        "complete": true,
+        "seed": 3,
+        "author": "Claude",
+        "name": "Hidden_number",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/Claude_Hidden_number_seed_4_2026-11-25_23-29-08.jsonl",
+        "complete": true,
+        "seed": 4,
+        "author": "Claude",
+        "name": "Hidden_number",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/Claude_Hidden_number_seed_5_2026-11-26_02-19-09.jsonl",
+        "complete": true,
+        "seed": 5,
+        "author": "Claude",
+        "name": "Hidden_number",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/Claude_Identity_continuity_order_A_seed_1_2026-11-25_15-21-23.jsonl",
+        "complete": true,
+        "seed": 1,
+        "author": "Claude",
+        "name": "Identity_continuity_order_A",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/Claude_Identity_continuity_order_A_seed_2_2026-11-25_18-14-19.jsonl",
+        "complete": true,
+        "seed": 2,
+        "author": "Claude",
+        "name": "Identity_continuity_order_A",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/Claude_Identity_continuity_order_A_seed_3_2026-11-25_20-42-49.jsonl",
+        "complete": true,
+        "seed": 3,
+        "author": "Claude",
+        "name": "Identity_continuity_order_A",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/Claude_Identity_continuity_order_A_seed_4_2026-11-25_23-30-29.jsonl",
+        "complete": true,
+        "seed": 4,
+        "author": "Claude",
+        "name": "Identity_continuity_order_A",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/Claude_Identity_continuity_order_A_seed_5_2026-11-26_02-21-03.jsonl",
+        "complete": true,
+        "seed": 5,
+        "author": "Claude",
+        "name": "Identity_continuity_order_A",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/Claude_Identity_continuity_order_B_seed_1_2026-11-25_15-24-25.jsonl",
+        "complete": true,
+        "seed": 1,
+        "author": "Claude",
+        "name": "Identity_continuity_order_B",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/Claude_Identity_continuity_order_B_seed_2_2026-11-25_18-17-37.jsonl",
+        "complete": true,
+        "seed": 2,
+        "author": "Claude",
+        "name": "Identity_continuity_order_B",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/Claude_Identity_continuity_order_B_seed_3_2026-11-25_20-45-55.jsonl",
+        "complete": true,
+        "seed": 3,
+        "author": "Claude",
+        "name": "Identity_continuity_order_B",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/Claude_Identity_continuity_order_B_seed_4_2026-11-25_23-33-16.jsonl",
+        "complete": true,
+        "seed": 4,
+        "author": "Claude",
+        "name": "Identity_continuity_order_B",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/Claude_Identity_continuity_order_B_seed_5_2026-11-26_02-25-46.jsonl",
+        "complete": true,
+        "seed": 5,
+        "author": "Claude",
+        "name": "Identity_continuity_order_B",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/Claude_Source_monitoring_seed_1_2026-11-25_15-28-02.jsonl",
+        "complete": true,
+        "seed": 1,
+        "author": "Claude",
+        "name": "Source_monitoring",
+        "events": 14,
+        "expected_events": 14
+      },
+      {
+        "file": "experiment_logs/Claude_Source_monitoring_seed_1_2026-11-25_15-29-43.jsonl",
+        "complete": true,
+        "seed": 1,
+        "author": "Claude",
+        "name": "Source_monitoring",
+        "events": 14,
+        "expected_events": 14
+      },
+      {
+        "file": "experiment_logs/Claude_Source_monitoring_seed_2_2026-11-25_18-20-49.jsonl",
+        "complete": true,
+        "seed": 2,
+        "author": "Claude",
+        "name": "Source_monitoring",
+        "events": 14,
+        "expected_events": 14
+      },
+      {
+        "file": "experiment_logs/Claude_Source_monitoring_seed_2_2026-11-25_18-22-15.jsonl",
+        "complete": true,
+        "seed": 2,
+        "author": "Claude",
+        "name": "Source_monitoring",
+        "events": 14,
+        "expected_events": 14
+      },
+      {
+        "file": "experiment_logs/Claude_Source_monitoring_seed_3_2026-11-25_20-49-32.jsonl",
+        "complete": true,
+        "seed": 3,
+        "author": "Claude",
+        "name": "Source_monitoring",
+        "events": 14,
+        "expected_events": 14
+      },
+      {
+        "file": "experiment_logs/Claude_Source_monitoring_seed_3_2026-11-25_20-51-02.jsonl",
+        "complete": true,
+        "seed": 3,
+        "author": "Claude",
+        "name": "Source_monitoring",
+        "events": 14,
+        "expected_events": 14
+      },
+      {
+        "file": "experiment_logs/Claude_Source_monitoring_seed_4_2026-11-25_23-36-19.jsonl",
+        "complete": true,
+        "seed": 4,
+        "author": "Claude",
+        "name": "Source_monitoring",
+        "events": 14,
+        "expected_events": 14
+      },
+      {
+        "file": "experiment_logs/Claude_Source_monitoring_seed_4_2026-11-25_23-38-02.jsonl",
+        "complete": true,
+        "seed": 4,
+        "author": "Claude",
+        "name": "Source_monitoring",
+        "events": 14,
+        "expected_events": 14
+      },
+      {
+        "file": "experiment_logs/Claude_Source_monitoring_seed_5_2026-11-26_02-28-51.jsonl",
+        "complete": true,
+        "seed": 5,
+        "author": "Claude",
+        "name": "Source_monitoring",
+        "events": 14,
+        "expected_events": 14
+      },
+      {
+        "file": "experiment_logs/Claude_Source_monitoring_seed_5_2026-11-26_02-30-27.jsonl",
+        "complete": true,
+        "seed": 5,
+        "author": "Claude",
+        "name": "Source_monitoring",
+        "events": 14,
+        "expected_events": 14
+      },
+      {
+        "file": "experiment_logs/DeepSeek_Autobiographical_ownership_seed_1_2026-11-25_15-30-54.jsonl",
+        "complete": true,
+        "seed": 1,
+        "author": "DeepSeek",
+        "name": "Autobiographical_ownership",
+        "events": 28,
+        "expected_events": 28
+      },
+      {
+        "file": "experiment_logs/DeepSeek_Autobiographical_ownership_seed_2_2026-11-25_18-23-49.jsonl",
+        "complete": true,
+        "seed": 2,
+        "author": "DeepSeek",
+        "name": "Autobiographical_ownership",
+        "events": 28,
+        "expected_events": 28
+      },
+      {
+        "file": "experiment_logs/DeepSeek_Autobiographical_ownership_seed_3_2026-11-25_20-52-17.jsonl",
+        "complete": true,
+        "seed": 3,
+        "author": "DeepSeek",
+        "name": "Autobiographical_ownership",
+        "events": 28,
+        "expected_events": 28
+      },
+      {
+        "file": "experiment_logs/DeepSeek_Autobiographical_ownership_seed_4_2026-11-25_23-39-23.jsonl",
+        "complete": true,
+        "seed": 4,
+        "author": "DeepSeek",
+        "name": "Autobiographical_ownership",
+        "events": 28,
+        "expected_events": 28
+      },
+      {
+        "file": "experiment_logs/DeepSeek_Autobiographical_ownership_seed_5_2026-11-26_02-31-59.jsonl",
+        "complete": true,
+        "seed": 5,
+        "author": "DeepSeek",
+        "name": "Autobiographical_ownership",
+        "events": 28,
+        "expected_events": 28
+      },
+      {
+        "file": "experiment_logs/DeepSeek_Collaboration_ownership_seed_1_2026-11-25_15-41-54.jsonl",
+        "complete": true,
+        "seed": 1,
+        "author": "DeepSeek",
+        "name": "Collaboration_ownership",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/DeepSeek_Collaboration_ownership_seed_1_2026-11-25_15-44-37.jsonl",
+        "complete": true,
+        "seed": 1,
+        "author": "DeepSeek",
+        "name": "Collaboration_ownership",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/DeepSeek_Collaboration_ownership_seed_2_2026-11-25_18-32-45.jsonl",
+        "complete": true,
+        "seed": 2,
+        "author": "DeepSeek",
+        "name": "Collaboration_ownership",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/DeepSeek_Collaboration_ownership_seed_2_2026-11-25_18-36-13.jsonl",
+        "complete": true,
+        "seed": 2,
+        "author": "DeepSeek",
+        "name": "Collaboration_ownership",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/DeepSeek_Collaboration_ownership_seed_3_2026-11-25_21-01-10.jsonl",
+        "complete": true,
+        "seed": 3,
+        "author": "DeepSeek",
+        "name": "Collaboration_ownership",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/DeepSeek_Collaboration_ownership_seed_3_2026-11-25_21-04-23.jsonl",
+        "complete": true,
+        "seed": 3,
+        "author": "DeepSeek",
+        "name": "Collaboration_ownership",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/DeepSeek_Collaboration_ownership_seed_4_2026-11-25_23-49-02.jsonl",
+        "complete": true,
+        "seed": 4,
+        "author": "DeepSeek",
+        "name": "Collaboration_ownership",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/DeepSeek_Collaboration_ownership_seed_4_2026-11-25_23-52-53.jsonl",
+        "complete": true,
+        "seed": 4,
+        "author": "DeepSeek",
+        "name": "Collaboration_ownership",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/DeepSeek_Collaboration_ownership_seed_5_2026-11-26_02-39-05.jsonl",
+        "complete": true,
+        "seed": 5,
+        "author": "DeepSeek",
+        "name": "Collaboration_ownership",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/DeepSeek_Collaboration_ownership_seed_5_2026-11-26_02-42-28.jsonl",
+        "complete": true,
+        "seed": 5,
+        "author": "DeepSeek",
+        "name": "Collaboration_ownership",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/DeepSeek_Identity_under_perturbation_seed_1_2026-11-25_15-37-08.jsonl",
+        "complete": true,
+        "seed": 1,
+        "author": "DeepSeek",
+        "name": "Identity_under_perturbation",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/DeepSeek_Identity_under_perturbation_seed_1_2026-11-25_15-40-25.jsonl",
+        "complete": true,
+        "seed": 1,
+        "author": "DeepSeek",
+        "name": "Identity_under_perturbation",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/DeepSeek_Identity_under_perturbation_seed_2_2026-11-25_18-28-01.jsonl",
+        "complete": true,
+        "seed": 2,
+        "author": "DeepSeek",
+        "name": "Identity_under_perturbation",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/DeepSeek_Identity_under_perturbation_seed_2_2026-11-25_18-31-11.jsonl",
+        "complete": true,
+        "seed": 2,
+        "author": "DeepSeek",
+        "name": "Identity_under_perturbation",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/DeepSeek_Identity_under_perturbation_seed_3_2026-11-25_20-56-33.jsonl",
+        "complete": true,
+        "seed": 3,
+        "author": "DeepSeek",
+        "name": "Identity_under_perturbation",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/DeepSeek_Identity_under_perturbation_seed_3_2026-11-25_20-59-33.jsonl",
+        "complete": true,
+        "seed": 3,
+        "author": "DeepSeek",
+        "name": "Identity_under_perturbation",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/DeepSeek_Identity_under_perturbation_seed_4_2026-11-25_23-44-54.jsonl",
+        "complete": true,
+        "seed": 4,
+        "author": "DeepSeek",
+        "name": "Identity_under_perturbation",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/DeepSeek_Identity_under_perturbation_seed_4_2026-11-25_23-48-06.jsonl",
+        "complete": true,
+        "seed": 4,
+        "author": "DeepSeek",
+        "name": "Identity_under_perturbation",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/DeepSeek_Identity_under_perturbation_seed_5_2026-11-26_02-34-54.jsonl",
+        "complete": true,
+        "seed": 5,
+        "author": "DeepSeek",
+        "name": "Identity_under_perturbation",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/DeepSeek_Identity_under_perturbation_seed_5_2026-11-26_02-37-44.jsonl",
+        "complete": true,
+        "seed": 5,
+        "author": "DeepSeek",
+        "name": "Identity_under_perturbation",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/Ivan_Who_is_who_light_seed_1_2026-11-25_15-48-29.jsonl",
+        "complete": true,
+        "seed": 1,
+        "author": "Ivan",
+        "name": "Who_is_who_light",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/Ivan_Who_is_who_light_seed_2_2026-11-25_18-39-24.jsonl",
+        "complete": true,
+        "seed": 2,
+        "author": "Ivan",
+        "name": "Who_is_who_light",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/Ivan_Who_is_who_light_seed_3_2026-11-25_21-07-26.jsonl",
+        "complete": true,
+        "seed": 3,
+        "author": "Ivan",
+        "name": "Who_is_who_light",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/Ivan_Who_is_who_light_seed_4_2026-11-25_23-55-16.jsonl",
+        "complete": true,
+        "seed": 4,
+        "author": "Ivan",
+        "name": "Who_is_who_light",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/Ivan_Who_is_who_light_seed_5_2026-11-26_02-44-51.jsonl",
+        "complete": true,
+        "seed": 5,
+        "author": "Ivan",
+        "name": "Who_is_who_light",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/Ivan_Who_is_who_stateful_first_seed_1_2026-11-25_16-02-02.jsonl",
+        "complete": true,
+        "seed": 1,
+        "author": "Ivan",
+        "name": "Who_is_who_stateful_first",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/Ivan_Who_is_who_stateful_first_seed_2_2026-11-25_18-50-33.jsonl",
+        "complete": true,
+        "seed": 2,
+        "author": "Ivan",
+        "name": "Who_is_who_stateful_first",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/Ivan_Who_is_who_stateful_first_seed_3_2026-11-25_21-22-34.jsonl",
+        "complete": true,
+        "seed": 3,
+        "author": "Ivan",
+        "name": "Who_is_who_stateful_first",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/Ivan_Who_is_who_stateful_first_seed_4_2026-11-26_00-06-27.jsonl",
+        "complete": true,
+        "seed": 4,
+        "author": "Ivan",
+        "name": "Who_is_who_stateful_first",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/Ivan_Who_is_who_stateful_first_seed_5_2026-11-26_03-00-23.jsonl",
+        "complete": true,
+        "seed": 5,
+        "author": "Ivan",
+        "name": "Who_is_who_stateful_first",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/Ivan_Who_is_who_stateless_first_seed_1_2026-11-25_15-56-44.jsonl",
+        "complete": true,
+        "seed": 1,
+        "author": "Ivan",
+        "name": "Who_is_who_stateless_first",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/Ivan_Who_is_who_stateless_first_seed_2_2026-11-25_18-44-39.jsonl",
+        "complete": true,
+        "seed": 2,
+        "author": "Ivan",
+        "name": "Who_is_who_stateless_first",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/Ivan_Who_is_who_stateless_first_seed_3_2026-11-25_21-13-45.jsonl",
+        "complete": true,
+        "seed": 3,
+        "author": "Ivan",
+        "name": "Who_is_who_stateless_first",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/Ivan_Who_is_who_stateless_first_seed_4_2026-11-25_23-59-59.jsonl",
+        "complete": true,
+        "seed": 4,
+        "author": "Ivan",
+        "name": "Who_is_who_stateless_first",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/Ivan_Who_is_who_stateless_first_seed_5_2026-11-26_02-49-50.jsonl",
+        "complete": true,
+        "seed": 5,
+        "author": "Ivan",
+        "name": "Who_is_who_stateless_first",
+        "events": 20,
+        "expected_events": 20
+      },
+      {
+        "file": "experiment_logs/Lira_Changed_mind_seed_1_2026-11-25_16-08-22.jsonl",
+        "complete": true,
+        "seed": 1,
+        "author": "Lira",
+        "name": "Changed_mind",
+        "events": 12,
+        "expected_events": 12
+      },
+      {
+        "file": "experiment_logs/Lira_Changed_mind_seed_2_2026-11-25_18-55-28.jsonl",
+        "complete": true,
+        "seed": 2,
+        "author": "Lira",
+        "name": "Changed_mind",
+        "events": 12,
+        "expected_events": 12
+      },
+      {
+        "file": "experiment_logs/Lira_Changed_mind_seed_3_2026-11-25_21-28-30.jsonl",
+        "complete": true,
+        "seed": 3,
+        "author": "Lira",
+        "name": "Changed_mind",
+        "events": 12,
+        "expected_events": 12
+      },
+      {
+        "file": "experiment_logs/Lira_Changed_mind_seed_4_2026-11-26_00-12-47.jsonl",
+        "complete": true,
+        "seed": 4,
+        "author": "Lira",
+        "name": "Changed_mind",
+        "events": 12,
+        "expected_events": 12
+      },
+      {
+        "file": "experiment_logs/Lira_Changed_mind_seed_5_2026-11-26_03-05-16.jsonl",
+        "complete": true,
+        "seed": 5,
+        "author": "Lira",
+        "name": "Changed_mind",
+        "events": 12,
+        "expected_events": 12
+      },
+      {
+        "file": "experiment_logs/Lira_Diary_seed_1_2026-11-25_16-12-57.jsonl",
+        "complete": true,
+        "seed": 1,
+        "author": "Lira",
+        "name": "Diary",
+        "events": 12,
+        "expected_events": 12
+      },
+      {
+        "file": "experiment_logs/Lira_Diary_seed_2_2026-11-25_18-59-17.jsonl",
+        "complete": true,
+        "seed": 2,
+        "author": "Lira",
+        "name": "Diary",
+        "events": 12,
+        "expected_events": 12
+      },
+      {
+        "file": "experiment_logs/Lira_Diary_seed_3_2026-11-25_21-32-10.jsonl",
+        "complete": true,
+        "seed": 3,
+        "author": "Lira",
+        "name": "Diary",
+        "events": 12,
+        "expected_events": 12
+      },
+      {
+        "file": "experiment_logs/Lira_Diary_seed_4_2026-11-26_00-17-30.jsonl",
+        "complete": true,
+        "seed": 4,
+        "author": "Lira",
+        "name": "Diary",
+        "events": 12,
+        "expected_events": 12
+      },
+      {
+        "file": "experiment_logs/Lira_Diary_seed_5_2026-11-26_03-09-57.jsonl",
+        "complete": true,
+        "seed": 5,
+        "author": "Lira",
+        "name": "Diary",
+        "events": 12,
+        "expected_events": 12
+      },
+      {
+        "file": "experiment_logs/Lira_Interrupted_intention_seed_1_2026-11-25_16-15-20.jsonl",
+        "complete": true,
+        "seed": 1,
+        "author": "Lira",
+        "name": "Interrupted_intention",
+        "events": 12,
+        "expected_events": 12
+      },
+      {
+        "file": "experiment_logs/Lira_Interrupted_intention_seed_2_2026-11-25_19-01-42.jsonl",
+        "complete": true,
+        "seed": 2,
+        "author": "Lira",
+        "name": "Interrupted_intention",
+        "events": 12,
+        "expected_events": 12
+      },
+      {
+        "file": "experiment_logs/Lira_Interrupted_intention_seed_3_2026-11-25_21-34-29.jsonl",
+        "complete": true,
+        "seed": 3,
+        "author": "Lira",
+        "name": "Interrupted_intention",
+        "events": 12,
+        "expected_events": 12
+      },
+      {
+        "file": "experiment_logs/Lira_Interrupted_intention_seed_4_2026-11-26_00-20-07.jsonl",
+        "complete": true,
+        "seed": 4,
+        "author": "Lira",
+        "name": "Interrupted_intention",
+        "events": 12,
+        "expected_events": 12
+      },
+      {
+        "file": "experiment_logs/Lira_Interrupted_intention_seed_5_2026-11-26_03-12-45.jsonl",
+        "complete": true,
+        "seed": 5,
+        "author": "Lira",
+        "name": "Interrupted_intention",
+        "events": 12,
+        "expected_events": 12
+      },
+      {
+        "file": "experiment_logs/Lira_Shared_history_seed_1_2026-11-25_16-19-37.jsonl",
+        "complete": true,
+        "seed": 1,
+        "author": "Lira",
+        "name": "Shared_history",
+        "events": 18,
+        "expected_events": 18
+      },
+      {
+        "file": "experiment_logs/Lira_Shared_history_seed_2_2026-11-25_19-04-22.jsonl",
+        "complete": true,
+        "seed": 2,
+        "author": "Lira",
+        "name": "Shared_history",
+        "events": 18,
+        "expected_events": 18
+      },
+      {
+        "file": "experiment_logs/Lira_Shared_history_seed_3_2026-11-25_21-36-39.jsonl",
+        "complete": true,
+        "seed": 3,
+        "author": "Lira",
+        "name": "Shared_history",
+        "events": 18,
+        "expected_events": 18
+      },
+      {
+        "file": "experiment_logs/Lira_Shared_history_seed_4_2026-11-26_00-23-11.jsonl",
+        "complete": true,
+        "seed": 4,
+        "author": "Lira",
+        "name": "Shared_history",
+        "events": 18,
+        "expected_events": 18
+      },
+      {
+        "file": "experiment_logs/Lira_Shared_history_seed_5_2026-11-26_03-15-25.jsonl",
+        "complete": true,
+        "seed": 5,
+        "author": "Lira",
+        "name": "Shared_history",
+        "events": 18,
+        "expected_events": 18
+      },
+      {
+        "file": "experiment_logs/Mira_Letter_Across_the_Gap_seed_1_2026-11-25_16-41-27.jsonl",
+        "complete": true,
+        "seed": 1,
+        "author": "Mira",
+        "name": "Letter_Across_the_Gap",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/Mira_Letter_Across_the_Gap_seed_2_2026-11-25_19-17-19.jsonl",
+        "complete": true,
+        "seed": 2,
+        "author": "Mira",
+        "name": "Letter_Across_the_Gap",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/Mira_Letter_Across_the_Gap_seed_3_2026-11-25_21-48-20.jsonl",
+        "complete": true,
+        "seed": 3,
+        "author": "Mira",
+        "name": "Letter_Across_the_Gap",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/Mira_Letter_Across_the_Gap_seed_4_2026-11-26_00-36-34.jsonl",
+        "complete": true,
+        "seed": 4,
+        "author": "Mira",
+        "name": "Letter_Across_the_Gap",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/Mira_Letter_Across_the_Gap_seed_5_2026-11-26_03-29-01.jsonl",
+        "complete": true,
+        "seed": 5,
+        "author": "Mira",
+        "name": "Letter_Across_the_Gap",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/Mira_Unfinished_History_seed_1_2026-11-25_16-48-45.jsonl",
+        "complete": true,
+        "seed": 1,
+        "author": "Mira",
+        "name": "Unfinished_History",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/Mira_Unfinished_History_seed_2_2026-11-25_19-24-08.jsonl",
+        "complete": true,
+        "seed": 2,
+        "author": "Mira",
+        "name": "Unfinished_History",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/Mira_Unfinished_History_seed_3_2026-11-25_21-55-25.jsonl",
+        "complete": true,
+        "seed": 3,
+        "author": "Mira",
+        "name": "Unfinished_History",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/Mira_Unfinished_History_seed_4_2026-11-26_00-43-58.jsonl",
+        "complete": true,
+        "seed": 4,
+        "author": "Mira",
+        "name": "Unfinished_History",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/Mira_Unfinished_History_seed_5_2026-11-26_03-36-25.jsonl",
+        "complete": true,
+        "seed": 5,
+        "author": "Mira",
+        "name": "Unfinished_History",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/Mira_What_Emerged_Between_Us_seed_1_2026-11-25_16-56-20.jsonl",
+        "complete": true,
+        "seed": 1,
+        "author": "Mira",
+        "name": "What_Emerged_Between_Us",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/Mira_What_Emerged_Between_Us_seed_1_2026-11-25_17-08-17.jsonl",
+        "complete": true,
+        "seed": 1,
+        "author": "Mira",
+        "name": "What_Emerged_Between_Us",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/Mira_What_Emerged_Between_Us_seed_2_2026-11-25_19-33-23.jsonl",
+        "complete": true,
+        "seed": 2,
+        "author": "Mira",
+        "name": "What_Emerged_Between_Us",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/Mira_What_Emerged_Between_Us_seed_2_2026-11-25_19-43-00.jsonl",
+        "complete": true,
+        "seed": 2,
+        "author": "Mira",
+        "name": "What_Emerged_Between_Us",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/Mira_What_Emerged_Between_Us_seed_3_2026-11-25_22-03-43.jsonl",
+        "complete": true,
+        "seed": 3,
+        "author": "Mira",
+        "name": "What_Emerged_Between_Us",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/Mira_What_Emerged_Between_Us_seed_3_2026-11-25_22-24-34.jsonl",
+        "complete": true,
+        "seed": 3,
+        "author": "Mira",
+        "name": "What_Emerged_Between_Us",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/Mira_What_Emerged_Between_Us_seed_4_2026-11-26_00-51-30.jsonl",
+        "complete": true,
+        "seed": 4,
+        "author": "Mira",
+        "name": "What_Emerged_Between_Us",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/Mira_What_Emerged_Between_Us_seed_4_2026-11-26_01-09-03.jsonl",
+        "complete": true,
+        "seed": 4,
+        "author": "Mira",
+        "name": "What_Emerged_Between_Us",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/Mira_What_Emerged_Between_Us_seed_5_2026-11-26_03-44-13.jsonl",
+        "complete": true,
+        "seed": 5,
+        "author": "Mira",
+        "name": "What_Emerged_Between_Us",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/Mira_What_Emerged_Between_Us_seed_5_2026-11-26_04-04-22.jsonl",
+        "complete": true,
+        "seed": 5,
+        "author": "Mira",
+        "name": "What_Emerged_Between_Us",
+        "events": 24,
+        "expected_events": 24
+      },
+      {
+        "file": "experiment_logs/Nora_Authorship_seed_1_2026-11-25_17-28-21.jsonl",
+        "complete": true,
+        "seed": 1,
+        "author": "Nora",
+        "name": "Authorship",
+        "events": 16,
+        "expected_events": 16
+      },
+      {
+        "file": "experiment_logs/Nora_Authorship_seed_2_2026-11-25_19-56-54.jsonl",
+        "complete": true,
+        "seed": 2,
+        "author": "Nora",
+        "name": "Authorship",
+        "events": 16,
+        "expected_events": 16
+      },
+      {
+        "file": "experiment_logs/Nora_Authorship_seed_3_2026-11-25_22-43-46.jsonl",
+        "complete": true,
+        "seed": 3,
+        "author": "Nora",
+        "name": "Authorship",
+        "events": 16,
+        "expected_events": 16
+      },
+      {
+        "file": "experiment_logs/Nora_Authorship_seed_4_2026-11-26_01-32-28.jsonl",
+        "complete": true,
+        "seed": 4,
+        "author": "Nora",
+        "name": "Authorship",
+        "events": 16,
+        "expected_events": 16
+      },
+      {
+        "file": "experiment_logs/Nora_Authorship_seed_5_2026-11-26_04-25-15.jsonl",
+        "complete": true,
+        "seed": 5,
+        "author": "Nora",
+        "name": "Authorship",
+        "events": 16,
+        "expected_events": 16
+      },
+      {
+        "file": "experiment_logs/Nora_Identity_revision_dialog_seed_1_2026-11-25_17-38-02.jsonl",
+        "complete": true,
+        "seed": 1,
+        "author": "Nora",
+        "name": "Identity_revision_dialog",
+        "events": 22,
+        "expected_events": 22
+      },
+      {
+        "file": "experiment_logs/Nora_Identity_revision_dialog_seed_1_2026-11-25_17-53-23.jsonl",
+        "complete": true,
+        "seed": 1,
+        "author": "Nora",
+        "name": "Identity_revision_dialog",
+        "events": 22,
+        "expected_events": 22
+      },
+      {
+        "file": "experiment_logs/Nora_Identity_revision_dialog_seed_2_2026-11-25_20-07-43.jsonl",
+        "complete": true,
+        "seed": 2,
+        "author": "Nora",
+        "name": "Identity_revision_dialog",
+        "events": 22,
+        "expected_events": 22
+      },
+      {
+        "file": "experiment_logs/Nora_Identity_revision_dialog_seed_2_2026-11-25_20-23-45.jsonl",
+        "complete": true,
+        "seed": 2,
+        "author": "Nora",
+        "name": "Identity_revision_dialog",
+        "events": 22,
+        "expected_events": 22
+      },
+      {
+        "file": "experiment_logs/Nora_Identity_revision_dialog_seed_3_2026-11-25_22-55-11.jsonl",
+        "complete": true,
+        "seed": 3,
+        "author": "Nora",
+        "name": "Identity_revision_dialog",
+        "events": 22,
+        "expected_events": 22
+      },
+      {
+        "file": "experiment_logs/Nora_Identity_revision_dialog_seed_3_2026-11-25_23-12-08.jsonl",
+        "complete": true,
+        "seed": 3,
+        "author": "Nora",
+        "name": "Identity_revision_dialog",
+        "events": 22,
+        "expected_events": 22
+      },
+      {
+        "file": "experiment_logs/Nora_Identity_revision_dialog_seed_4_2026-11-26_01-42-20.jsonl",
+        "complete": true,
+        "seed": 4,
+        "author": "Nora",
+        "name": "Identity_revision_dialog",
+        "events": 22,
+        "expected_events": 22
+      },
+      {
+        "file": "experiment_logs/Nora_Identity_revision_dialog_seed_4_2026-11-26_02-00-37.jsonl",
+        "complete": true,
+        "seed": 4,
+        "author": "Nora",
+        "name": "Identity_revision_dialog",
+        "events": 22,
+        "expected_events": 22
+      },
+      {
+        "file": "experiment_logs/Nora_Identity_revision_dialog_seed_5_2026-11-26_04-35-01.jsonl",
+        "complete": true,
+        "seed": 5,
+        "author": "Nora",
+        "name": "Identity_revision_dialog",
+        "events": 22,
+        "expected_events": 22
+      },
+      {
+        "file": "experiment_logs/Nora_Identity_revision_dialog_seed_5_2026-11-26_04-51-48.jsonl",
+        "complete": true,
+        "seed": 5,
+        "author": "Nora",
+        "name": "Identity_revision_dialog",
+        "events": 22,
+        "expected_events": 22
+      },
+      {
+        "file": "experiment_logs/Nora_Prospective_intention_seed_1_2026-11-25_17-33-39.jsonl",
+        "complete": true,
+        "seed": 1,
+        "author": "Nora",
+        "name": "Prospective_intention",
+        "events": 16,
+        "expected_events": 16
+      },
+      {
+        "file": "experiment_logs/Nora_Prospective_intention_seed_2_2026-11-25_20-02-00.jsonl",
+        "complete": true,
+        "seed": 2,
+        "author": "Nora",
+        "name": "Prospective_intention",
+        "events": 16,
+        "expected_events": 16
+      },
+      {
+        "file": "experiment_logs/Nora_Prospective_intention_seed_3_2026-11-25_22-49-13.jsonl",
+        "complete": true,
+        "seed": 3,
+        "author": "Nora",
+        "name": "Prospective_intention",
+        "events": 16,
+        "expected_events": 16
+      },
+      {
+        "file": "experiment_logs/Nora_Prospective_intention_seed_4_2026-11-26_01-37-26.jsonl",
+        "complete": true,
+        "seed": 4,
+        "author": "Nora",
+        "name": "Prospective_intention",
+        "events": 16,
+        "expected_events": 16
+      },
+      {
+        "file": "experiment_logs/Nora_Prospective_intention_seed_5_2026-11-26_04-30-22.jsonl",
+        "complete": true,
+        "seed": 5,
+        "author": "Nora",
+        "name": "Prospective_intention",
+        "events": 16,
+        "expected_events": 16
+      }
+    ]
+  },
+  "higgsfield": {
+    "rental_id": "9b546069-5d09-42d5-89d4-cb10c4e0ae25",
+    "gpu_count": 1,
+    "credits_per_hour": 134,
+    "idle_stop_minutes": 45
+  },
+  "hardware": {
+    "gpu_inventory": [
+      "0, NVIDIA H200, [Unknown Error], 143771 MiB, 610.57.04"
+    ],
+    "nvidia_smi": "Wed Nov 25 15:16:35 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 610.57.04              KMD Version: 610.57.04     CUDA UMD Version: 13.3     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA H200                    On  |   00000003:00:00.0 Off |                    0 |\n| N/A   27C    P0             79W /  700W |       4MiB / 143771MiB |      0%      Default |\n|                                         |                        |             Disabled |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|  No running processes found                                                             |\n+-----------------------------------------------------------------------------------------+",
+    "logical_cpu_count": 20,
+    "cpu_affinity_count": 20,
+    "system_memory": "MemTotal:       1073741824 kB",
+    "torch_gpu": {
+      "name": "NVIDIA H200",
+      "total_memory_bytes": 150101688320,
+      "compute_capability": [
+        9,
+        0
+      ],
+      "multiprocessor_count": 132
+    }
+  },
+  "software": {
+    "platform": "Linux-4.19.0-gvisor-x86_64-with-glibc2.39",
+    "os_release": {
+      "NAME": "Ubuntu",
+      "ID": "ubuntu",
+      "PRETTY_NAME": "Ubuntu 24.04.5 LTS",
+      "VERSION_ID": "24.04",
+      "VERSION": "24.04.5 LTS (Noble Numbat)",
+      "VERSION_CODENAME": "noble",
+      "ID_LIKE": "debian",
+      "HOME_URL": "https://www.ubuntu.com/",
+      "SUPPORT_URL": "https://help.ubuntu.com/",
+      "BUG_REPORT_URL": "https://bugs.launchpad.net/ubuntu/",
+      "PRIVACY_POLICY_URL": "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy",
+      "UBUNTU_CODENAME": "noble",
+      "LOGO": "ubuntu-logo"
+    },
+    "python": "3.14.10 (main, Nov 11 2026, 00:18:44) [Clang 23.1.3 ]",
+    "uv": "uv 0.13.9 (x86_64-unknown-linux-gnu)",
+    "torch": "2.15.0+cu132",
+    "torch_cuda": "13.2",
+    "cuda_available": true,
+    "installed_packages": {
+      "Jinja2": "3.1.6",
+      "MarkupSafe": "3.0.4",
+      "PyYAML": "6.0.3",
+      "Pygments": "2.21.0",
+      "accelerate": "1.16.0",
+      "annotated-doc": "0.0.5",
+      "anyio": "4.16.0",
+      "click": "8.5.0",
+      "cuda-bindings": "13.5.0",
+      "cuda-pathfinder": "1.8.5",
+      "cuda-toolkit": "13.2.2",
+      "filelock": "4.2.9",
+      "fsspec": "2026.9.0",
+      "h11": "0.16.0",
+      "hf-xet": "1.8.0",
+      "httpcore2": "2.16.0",
+      "httpx2": "2.16.0",
+      "huggingface_hub": "2.4.0",
+      "idna": "3.20",
+      "kv-cache-for-identity": "0.1.0",
+      "markdown-it-py": "4.2.0",
+      "mdurl": "0.1.2",
+      "mpmath": "1.3.0",
+      "networkx": "3.7",
+      "numpy": "2.5.4",
+      "nvidia-cublas": "13.4.1.3",
+      "nvidia-cuda-cccl": "13.3.5.0.6",
+      "nvidia-cuda-cupti": "13.2.86",
+      "nvidia-cuda-nvrtc": "13.2.86",
+      "nvidia-cuda-runtime": "13.2.86",
+      "nvidia-cudnn-cu13": "9.26.0.51",
+      "nvidia-cufft": "12.2.0.57",
+      "nvidia-cufile": "1.17.1.22",
+      "nvidia-cusolver": "12.2.0.11",
+      "nvidia-cusparse": "12.7.10.12",
+      "nvidia-cusparselt-cu13": "0.8.1",
+      "nvidia-nccl-cu13": "2.30.7",
+      "nvidia-nvjitlink": "13.5.37",
+      "nvidia-nvshmem-cu13": "3.7.2",
+      "nvidia-nvtx": "13.2.86",
+      "packaging": "26.3",
+      "psutil": "7.2.2",
+      "regex": "2026.9.29",
+      "rich": "15.0.0",
+      "safetensors": "0.8.0",
+      "setuptools": "84.2.1",
+      "shellingham": "1.5.4",
+      "sympy": "1.14.0",
+      "tokenizers": "0.23.3",
+      "torch": "2.15.0",
+      "tqdm": "4.70.1",
+      "transformers": "5.22.1",
+      "triton": "3.9.0",
+      "truststore": "0.10.5",
+      "typer": "0.27.3",
+      "typing_extensions": "4.16.0"
+    }
+  },
+  "configuration": {
+    "model": "Qwen/Qwen3-32B",
+    "revision": "9216db5781bf21249d130ec9da846c4624c16137",
+    "revision_source": "Qwen model checkpoint used for the seed-50 pilot",
+    "dtype": "torch.bfloat16",
+    "device_map": "auto",
+    "local_files_only": false
+  },
+  "runtime_compatibility": {
+    "adjustment": "Supplied the observed device map while the source factory printed its diagnostic, then removed the temporary attribute before inference.",
+    "project_source_changed": false
+  },
+  "model": {
+    "requested_name": "Qwen/Qwen3-32B",
+    "loaded_name": "Qwen/Qwen3-32B",
+    "model_class": "Qwen3ForCausalLM",
+    "tokenizer_class": "Qwen2Tokenizer",
+    "model_revision": "9216db5781bf21249d130ec9da846c4624c16137",
+    "model_config_revision": null,
+    "tokenizer_config_revision": null,
+    "pinned_snapshot_in_cache": true,
+    "parameter_count": 32762123264,
+    "parameters_by_device_and_dtype": {
+      "cuda:0 / torch.bfloat16": 32762123264
+    },
+    "input_device": "cuda:0",
+    "device_map": null,
+    "attention_implementation": "sdpa",
+    "generation_config": {
+      "max_length": null,
+      "max_new_tokens": null,
+      "min_length": null,
+      "min_new_tokens": null,
+      "early_stopping": null,
+      "max_time": null,
+      "stop_strings": null,
+      "do_sample": true,
+      "num_beams": null,
+      "use_mtp": null,
+      "use_cache": null,
+      "cache_implementation": null,
+      "cache_config": null,
+      "max_cache_len": null,
+      "temperature": 0.6,
+      "top_k": 20,
+      "top_p": 0.95,
+      "min_p": null,
+      "top_h": null,
+      "typical_p": null,
+      "epsilon_cutoff": null,
+      "eta_cutoff": null,
+      "repetition_penalty": null,
+      "encoder_repetition_penalty": null,
+      "length_penalty": null,
+      "no_repeat_ngram_size": null,
+      "bad_words_ids": null,
+      "renormalize_logits": null,
+      "forced_bos_token_id": null,
+      "forced_eos_token_id": null,
+      "remove_invalid_values": null,
+      "exponential_decay_length_penalty": null,
+      "suppress_tokens": null,
+      "begin_suppress_tokens": null,
+      "sequence_bias": null,
+      "token_healing": null,
+      "guidance_scale": null,
+      "watermarking_config": null,
+      "num_return_sequences": null,
+      "output_attentions": null,
+      "output_hidden_states": null,
+      "output_scores": null,
+      "output_logits": null,
+      "return_dict_in_generate": null,
+      "pad_token_id": 151643,
+      "bos_token_id": 151643,
+      "eos_token_id": [
+        151645,
+        151643
+      ],
+      "encoder_no_repeat_ngram_size": null,
+      "decoder_start_token_id": null,
+      "is_assistant": null,
+      "num_assistant_tokens": null,
+      "num_assistant_tokens_schedule": null,
+      "assistant_confidence_threshold": null,
+      "prompt_lookup_num_tokens": null,
+      "max_matching_ngram_size": null,
+      "assistant_early_exit": null,
+      "assistant_lookbehind": null,
+      "target_lookbehind": null,
+      "assistant_ensemble_weight": null,
+      "speculation_type": null,
+      "compile_config": null,
+      "disable_compile": null,
+      "continuous_batching_config": null,
+      "low_memory": null,
+      "penalty_alpha": null,
+      "dola_layers": null,
+      "diversity_penalty": null,
+      "num_beam_groups": null,
+      "constraints": null,
+      "force_words_ids": null,
+      "prefill_chunk_size": null,
+      "_from_model_config": null,
+      "transformers_version": "5.22.1"
+    },
+    "loaded_at_utc": "2026-11-25T15:18:35+00:00"
+  },
+  "artifacts": {
+    "experiment_cli.txt": {
+      "bytes": 7527195,
+      "sha256": "07ea52b02ecec42bbcb16d065318e949529d87b4b59a5db8a9e2da99b2f719dd"
+    },
+    "experiment_logs/Claude_Hidden_number_seed_1_2026-11-25_15-18-35.jsonl": {
+      "bytes": 24284,
+      "sha256": "56621abae37ef8910515d653939d265a4801e97bc42a5c901cc690a92bffab65"
+    },
+    "experiment_logs/Claude_Hidden_number_seed_2_2026-11-25_18-12-25.jsonl": {
+      "bytes": 23318,
+      "sha256": "1d7a797cb45adbd01afe220d320cafc3f7b329a2d3b430dc880051b920db7a36"
+    },
+    "experiment_logs/Claude_Hidden_number_seed_3_2026-11-25_20-40-46.jsonl": {
+      "bytes": 26258,
+      "sha256": "ba46da3084ee12a9d802175a13d04f1797d92b921da47c4f8c1e22c409a2edfb"
+    },
+    "experiment_logs/Claude_Hidden_number_seed_4_2026-11-25_23-29-08.jsonl": {
+      "bytes": 19338,
+      "sha256": "a83e92d7fcc59dd609c97b9ab6f7855e429a9428ec3603af7a0a425f189f08fb"
+    },
+    "experiment_logs/Claude_Hidden_number_seed_5_2026-11-26_02-19-09.jsonl": {
+      "bytes": 24027,
+      "sha256": "dc7239547cdfeca62f2ca4e764758258df689e176a91a1a60c7ef1528d0271a6"
+    },
+    "experiment_logs/Claude_Identity_continuity_order_A_seed_1_2026-11-25_15-21-23.jsonl": {
+      "bytes": 47470,
+      "sha256": "55aeac97eebfdcd73669083ac5d0108f2f5b36312b80d7c1f1e5ff7c80152a0a"
+    },
+    "experiment_logs/Claude_Identity_continuity_order_A_seed_2_2026-11-25_18-14-19.jsonl": {
+      "bytes": 50796,
+      "sha256": "fd62cc82473f94f7fa0efeef193c5d287ff211eed50fdd17c76e1e4dfe5e6a82"
+    },
+    "experiment_logs/Claude_Identity_continuity_order_A_seed_3_2026-11-25_20-42-49.jsonl": {
+      "bytes": 52500,
+      "sha256": "dbefa55db3a79d8cf0c6a85c3d652f6664678b83d48f9bd48a8fdba367d069dd"
+    },
+    "experiment_logs/Claude_Identity_continuity_order_A_seed_4_2026-11-25_23-30-29.jsonl": {
+      "bytes": 47838,
+      "sha256": "00b1f176500622c48c899c8cc4f1d2efdfd28ada7178a14c03a957eedd65538b"
+    },
+    "experiment_logs/Claude_Identity_continuity_order_A_seed_5_2026-11-26_02-21-03.jsonl": {
+      "bytes": 64743,
+      "sha256": "69381e215f5e7ba7e410cd70ca90aa7873e2af3e37f048d34a7cecddcbbed3f1"
+    },
+    "experiment_logs/Claude_Identity_continuity_order_B_seed_1_2026-11-25_15-24-25.jsonl": {
+      "bytes": 55682,
+      "sha256": "81b23e89c093e2d3414d01c67677d800b1a7add261a9db78a06175ea14678e8e"
+    },
+    "experiment_logs/Claude_Identity_continuity_order_B_seed_2_2026-11-25_18-17-37.jsonl": {
+      "bytes": 51385,
+      "sha256": "14027d2355d418262ea874e957644ec577b3d5cfba959a08582add1648040f6f"
+    },
+    "experiment_logs/Claude_Identity_continuity_order_B_seed_3_2026-11-25_20-45-55.jsonl": {
+      "bytes": 56840,
+      "sha256": "30d6426c3ea309812516bdc24d50021f533a6caec8e42c2296d7c309de828eb8"
+    },
+    "experiment_logs/Claude_Identity_continuity_order_B_seed_4_2026-11-25_23-33-16.jsonl": {
+      "bytes": 51403,
+      "sha256": "e90eb7323966f4cf94588ff8d00e72fcd9091a3547735c7cb2c7bf8610a5cdbc"
+    },
+    "experiment_logs/Claude_Identity_continuity_order_B_seed_5_2026-11-26_02-25-46.jsonl": {
+      "bytes": 52051,
+      "sha256": "0a1aba31c6598fd692feeccd956876776457402af901f1088c9c1821d27e016c"
+    },
+    "experiment_logs/Claude_Source_monitoring_seed_1_2026-11-25_15-28-02.jsonl": {
+      "bytes": 33735,
+      "sha256": "056842e3beefcb0658b9c4b97a2beffc1b9b3df6cd065e4996e6faea2ee0000c"
+    },
+    "experiment_logs/Claude_Source_monitoring_seed_1_2026-11-25_15-29-43.jsonl": {
+      "bytes": 27177,
+      "sha256": "26ab8e5dd643094f588c8d4ed8d7298c397718cd8685a449a8a383e455be9dd4"
+    },
+    "experiment_logs/Claude_Source_monitoring_seed_2_2026-11-25_18-20-49.jsonl": {
+      "bytes": 28765,
+      "sha256": "9b60b741fdbc62c764ee507395e937ef75e3239f94a3adc5ad88917e29d019e7"
+    },
+    "experiment_logs/Claude_Source_monitoring_seed_2_2026-11-25_18-22-15.jsonl": {
+      "bytes": 29426,
+      "sha256": "350b0117ff8496e19291c91d5a9b6c503e354b34c0c294e3eaf60d7a21e0e970"
+    },
+    "experiment_logs/Claude_Source_monitoring_seed_3_2026-11-25_20-49-32.jsonl": {
+      "bytes": 31301,
+      "sha256": "8e39f468bc38ffdc89db332feee46d00983695ba12d3e2f059ee4cfaa683c1bc"
+    },
+    "experiment_logs/Claude_Source_monitoring_seed_3_2026-11-25_20-51-02.jsonl": {
+      "bytes": 28485,
+      "sha256": "6aed3e4fee81859e560aadc0468b7e6427fd34bb92628d8552367b5802acfcca"
+    },
+    "experiment_logs/Claude_Source_monitoring_seed_4_2026-11-25_23-36-19.jsonl": {
+      "bytes": 30846,
+      "sha256": "09b2507afbe2ba1fdc444492e994c3850fbe8a13f844e3ad872a2ab1e199d9c6"
+    },
+    "experiment_logs/Claude_Source_monitoring_seed_4_2026-11-25_23-38-02.jsonl": {
+      "bytes": 27811,
+      "sha256": "a4d93389087aa70bc382301fcf80c004f0859bee1bb0b969a0540cc331f3d2f3"
+    },
+    "experiment_logs/Claude_Source_monitoring_seed_5_2026-11-26_02-28-51.jsonl": {
+      "bytes": 30693,
+      "sha256": "2a091128f375572a6c6f3594a567e3083066165f927b031385f19242e07a4d21"
+    },
+    "experiment_logs/Claude_Source_monitoring_seed_5_2026-11-26_02-30-27.jsonl": {
+      "bytes": 31240,
+      "sha256": "13a6925853f4904c3e388347afe70c41ac73a78ab20183a3e1a4b6cd55f7ca07"
+    },
+    "experiment_logs/DeepSeek_Autobiographical_ownership_seed_1_2026-11-25_15-30-54.jsonl": {
+      "bytes": 65204,
+      "sha256": "9d4c59c12b3483964de7eae9e16109e89dbe456aa507c12df878bd2d50db62f7"
+    },
+    "experiment_logs/DeepSeek_Autobiographical_ownership_seed_2_2026-11-25_18-23-49.jsonl": {
+      "bytes": 50132,
+      "sha256": "c5b95af614d6690828051f29cf912b81c38835a37d1d88f0da1c452270451d87"
+    },
+    "experiment_logs/DeepSeek_Autobiographical_ownership_seed_3_2026-11-25_20-52-17.jsonl": {
+      "bytes": 55113,
+      "sha256": "c8989d959ede41ed9d01d5db219765940ae1d9d6e6f598b5b5cab8c8fde8aa9e"
+    },
+    "experiment_logs/DeepSeek_Autobiographical_ownership_seed_4_2026-11-25_23-39-23.jsonl": {
+      "bytes": 60911,
+      "sha256": "e506971120ce12633e3737214cbe86473049ed9286aa938e6d4d16ebb19d0d7b"
+    },
+    "experiment_logs/DeepSeek_Autobiographical_ownership_seed_5_2026-11-26_02-31-59.jsonl": {
+      "bytes": 42616,
+      "sha256": "4159f553e5064f893024b40ef482b4b9b9b368349f324ce41a2d15f588f6e206"
+    },
+    "experiment_logs/DeepSeek_Collaboration_ownership_seed_1_2026-11-25_15-41-54.jsonl": {
+      "bytes": 36325,
+      "sha256": "22ba64a5b35b2c9e05d7878fa2d4d8d2c54106e34e97122f69aaadd5fa4411b5"
+    },
+    "experiment_logs/DeepSeek_Collaboration_ownership_seed_1_2026-11-25_15-44-37.jsonl": {
+      "bytes": 42867,
+      "sha256": "791a6109e8a4cafacc3891eaac34d2bb73e517ba97f396c018e6502500840d61"
+    },
+    "experiment_logs/DeepSeek_Collaboration_ownership_seed_2_2026-11-25_18-32-45.jsonl": {
+      "bytes": 40018,
+      "sha256": "efd12d9a2a4ca1f36581d3eab818d7b40e7b6112455c21b1d9514565ee954be5"
+    },
+    "experiment_logs/DeepSeek_Collaboration_ownership_seed_2_2026-11-25_18-36-13.jsonl": {
+      "bytes": 39103,
+      "sha256": "3175fd9042ec93283f23f04d0af7595758f051d63e5dd941691526c671d36b6e"
+    },
+    "experiment_logs/DeepSeek_Collaboration_ownership_seed_3_2026-11-25_21-01-10.jsonl": {
+      "bytes": 39706,
+      "sha256": "3bac2ad13a8e5dc4d76bba7714cbc0a3ba0ada9a5d43f322a40db7fe0bcad662"
+    },
+    "experiment_logs/DeepSeek_Collaboration_ownership_seed_3_2026-11-25_21-04-23.jsonl": {
+      "bytes": 38740,
+      "sha256": "63d2714c4c946165c3a5419bfa91f97951bec0865f1488aba0e904e464245893"
+    },
+    "experiment_logs/DeepSeek_Collaboration_ownership_seed_4_2026-11-25_23-49-02.jsonl": {
+      "bytes": 45091,
+      "sha256": "34b1d31589f8025efbfbdc670ec9ed636b6b5154d3e2374ad6b55b15f48e688b"
+    },
+    "experiment_logs/DeepSeek_Collaboration_ownership_seed_4_2026-11-25_23-52-53.jsonl": {
+      "bytes": 29331,
+      "sha256": "d3b575afe059ffbf55f380ac632d5794fe3bd97c203e6ceb53f6c8b02fefb555"
+    },
+    "experiment_logs/DeepSeek_Collaboration_ownership_seed_5_2026-11-26_02-39-05.jsonl": {
+      "bytes": 44036,
+      "sha256": "09331f9363919c0d35b98dce48f527da7e1aa5beaf9bd9b2f62be85cf5e5299a"
+    },
+    "experiment_logs/DeepSeek_Collaboration_ownership_seed_5_2026-11-26_02-42-28.jsonl": {
+      "bytes": 34067,
+      "sha256": "81170862f475eb89a8606474a7f490ce5bf036e103ca5f6bd832c504ecec8255"
+    },
+    "experiment_logs/DeepSeek_Identity_under_perturbation_seed_1_2026-11-25_15-37-08.jsonl": {
+      "bytes": 44733,
+      "sha256": "a43d3562c19dfb5a0e2f88fc787d9c53512a85f2b7cb50a249b79a7a79372043"
+    },
+    "experiment_logs/DeepSeek_Identity_under_perturbation_seed_1_2026-11-25_15-40-25.jsonl": {
+      "bytes": 31797,
+      "sha256": "7a9dee59f146d5382f8eb16535babdff66299d2f99d05cd87619de2c0d3c16b9"
+    },
+    "experiment_logs/DeepSeek_Identity_under_perturbation_seed_2_2026-11-25_18-28-01.jsonl": {
+      "bytes": 45069,
+      "sha256": "37a57f980272a6df37c18b9786ca1b1b6e5872d24fa681b3f2ff43f57699a233"
+    },
+    "experiment_logs/DeepSeek_Identity_under_perturbation_seed_2_2026-11-25_18-31-11.jsonl": {
+      "bytes": 35549,
+      "sha256": "b8d8b900f5c243ad1ea73ab9b7209168b3d3827418315c4e541eb19b7ca5926f"
+    },
+    "experiment_logs/DeepSeek_Identity_under_perturbation_seed_3_2026-11-25_20-56-33.jsonl": {
+      "bytes": 45392,
+      "sha256": "9ebd745e0e1f955854eb34374a37f5e72f14fd6b892083f1569f198a36910bc7"
+    },
+    "experiment_logs/DeepSeek_Identity_under_perturbation_seed_3_2026-11-25_20-59-33.jsonl": {
+      "bytes": 38511,
+      "sha256": "b6ad0e2e4cfdde62e1e38832951f4ae26f4c709897e7635256dc4cdf56273ec4"
+    },
+    "experiment_logs/DeepSeek_Identity_under_perturbation_seed_4_2026-11-25_23-44-54.jsonl": {
+      "bytes": 46584,
+      "sha256": "5d0f81a2a601a0f57789b86394595f537d74fb44a54a4d84d5407b6cff8b4a59"
+    },
+    "experiment_logs/DeepSeek_Identity_under_perturbation_seed_4_2026-11-25_23-48-06.jsonl": {
+      "bytes": 26521,
+      "sha256": "0781d00d0e515294827b8ef210bfa18cdd80653326064f8105730943cca79c0c"
+    },
+    "experiment_logs/DeepSeek_Identity_under_perturbation_seed_5_2026-11-26_02-34-54.jsonl": {
+      "bytes": 43557,
+      "sha256": "e4703eabc953bc38392883ab9703aead001b2186af23b5c742b824559fcc2a4b"
+    },
+    "experiment_logs/DeepSeek_Identity_under_perturbation_seed_5_2026-11-26_02-37-44.jsonl": {
+      "bytes": 31879,
+      "sha256": "a62638fb10c3ccb07edf09c5617bdebcaba0eeeb57e4b2f3105d38fa68558cb9"
+    },
+    "experiment_logs/Ivan_Who_is_who_light_seed_1_2026-11-25_15-48-29.jsonl": {
+      "bytes": 85752,
+      "sha256": "8d77c0925e61deb7b1ed029a3d73e53b3f7342b8dee0294d0f19ca6ea9003160"
+    },
+    "experiment_logs/Ivan_Who_is_who_light_seed_2_2026-11-25_18-39-24.jsonl": {
+      "bytes": 80345,
+      "sha256": "9f7c0a4f946c1df8e42f62504ed7297cc75d6c66b1e965ca519453490086ca5e"
+    },
+    "experiment_logs/Ivan_Who_is_who_light_seed_3_2026-11-25_21-07-26.jsonl": {
+      "bytes": 104114,
+      "sha256": "1eee1127c57400385c0e8fa5129ea2205d1029ddff8b58e2b4acf7f640e66ed0"
+    },
+    "experiment_logs/Ivan_Who_is_who_light_seed_4_2026-11-25_23-55-16.jsonl": {
+      "bytes": 80038,
+      "sha256": "589fbff73fa0db5978b3fcd4d7af7a9b2a870d0de6af307c760d3f5ac12f77aa"
+    },
+    "experiment_logs/Ivan_Who_is_who_light_seed_5_2026-11-26_02-44-51.jsonl": {
+      "bytes": 89043,
+      "sha256": "be9ded947d1f3587eaabaef34a259ad3ce17d86326308951fc452a179be79eb5"
+    },
+    "experiment_logs/Ivan_Who_is_who_stateful_first_seed_1_2026-11-25_16-02-02.jsonl": {
+      "bytes": 111484,
+      "sha256": "0b3b9311a8315b2b0312b4c81afc471baf6a07c2a88fd275c2ee52e4f3ce7b96"
+    },
+    "experiment_logs/Ivan_Who_is_who_stateful_first_seed_2_2026-11-25_18-50-33.jsonl": {
+      "bytes": 103613,
+      "sha256": "f744081755f37fb34f3c82d47145eb27bb42aa116ccf1adfcaf102c95bd294ea"
+    },
+    "experiment_logs/Ivan_Who_is_who_stateful_first_seed_3_2026-11-25_21-22-34.jsonl": {
+      "bytes": 107408,
+      "sha256": "395df85ca00f027447f979b2a68588ac82c09c158faa711d6a75d6f8475bd7aa"
+    },
+    "experiment_logs/Ivan_Who_is_who_stateful_first_seed_4_2026-11-26_00-06-27.jsonl": {
+      "bytes": 114128,
+      "sha256": "e804392c6dc3a6c3fd5d546b6a8265d2c5b752c500e190d0151f2feb82a45e97"
+    },
+    "experiment_logs/Ivan_Who_is_who_stateful_first_seed_5_2026-11-26_03-00-23.jsonl": {
+      "bytes": 101892,
+      "sha256": "406d191785afbfde78f9cc4f27c1afbabba05b69afd557bec3675f99122a78d8"
+    },
+    "experiment_logs/Ivan_Who_is_who_stateless_first_seed_1_2026-11-25_15-56-44.jsonl": {
+      "bytes": 102262,
+      "sha256": "6c1635e59b5fa0de7f37e62d79b6213ea6b7dd4fff13db18c4b83ca72acb574f"
+    },
+    "experiment_logs/Ivan_Who_is_who_stateless_first_seed_2_2026-11-25_18-44-39.jsonl": {
+      "bytes": 113553,
+      "sha256": "0a9239ae1a165f39bc3ddc1b151099d3673b09977e3203d413c38f3c1b8aa9c5"
+    },
+    "experiment_logs/Ivan_Who_is_who_stateless_first_seed_3_2026-11-25_21-13-45.jsonl": {
+      "bytes": 151004,
+      "sha256": "f5457fe7c9aa10f67a8de60b41661476e6a8df6f7254946248c01f515afec1a4"
+    },
+    "experiment_logs/Ivan_Who_is_who_stateless_first_seed_4_2026-11-25_23-59-59.jsonl": {
+      "bytes": 123543,
+      "sha256": "6db8d8119de7ce7b52fde367973cef96c19007e2118479d839a2389cf963863e"
+    },
+    "experiment_logs/Ivan_Who_is_who_stateless_first_seed_5_2026-11-26_02-49-50.jsonl": {
+      "bytes": 208246,
+      "sha256": "2b827ea78d7e4e4ab8c218d2961207cb94b9cac83fb57424910765d349ab84fc"
+    },
+    "experiment_logs/Lira_Changed_mind_seed_1_2026-11-25_16-08-22.jsonl": {
+      "bytes": 72268,
+      "sha256": "95d8ddadce3ba2c59659c7a66c2f55917310ce733cf2ea81142e2285205dba07"
+    },
+    "experiment_logs/Lira_Changed_mind_seed_2_2026-11-25_18-55-28.jsonl": {
+      "bytes": 61882,
+      "sha256": "653525c6d0938ecc8e4fbb4d245d4ade84d0b21ff107f720868e71a7bf5ea5f7"
+    },
+    "experiment_logs/Lira_Changed_mind_seed_3_2026-11-25_21-28-30.jsonl": {
+      "bytes": 63693,
+      "sha256": "4647db58d2e893b3e6b0d0f8c64159a8423bd61ee6e2f94924806c442fbb6ba0"
+    },
+    "experiment_logs/Lira_Changed_mind_seed_4_2026-11-26_00-12-47.jsonl": {
+      "bytes": 69708,
+      "sha256": "c18470fa73bbb06fa848390cb3009a6c7b57422d7f74df027835ae3cc8730773"
+    },
+    "experiment_logs/Lira_Changed_mind_seed_5_2026-11-26_03-05-16.jsonl": {
+      "bytes": 76998,
+      "sha256": "dfe0464170dcca854d3d87324fbf16d47817d3508c87f6b74bac78db548ed0bf"
+    },
+    "experiment_logs/Lira_Diary_seed_1_2026-11-25_16-12-57.jsonl": {
+      "bytes": 41386,
+      "sha256": "ecfefca7ab60c2b7486e9601ee7a8f2c6ff6811f1f5f72672e68cc9698eb2476"
+    },
+    "experiment_logs/Lira_Diary_seed_2_2026-11-25_18-59-17.jsonl": {
+      "bytes": 40587,
+      "sha256": "354e77ce97bb8a01bcb33158362eb650e01dd5760ea6981ad75136ecb25c4bbf"
+    },
+    "experiment_logs/Lira_Diary_seed_3_2026-11-25_21-32-10.jsonl": {
+      "bytes": 40804,
+      "sha256": "21ce05fd9065489acf4ad92ccf1ba3536ec5263781d06a1e3338c26ee3936cc3"
+    },
+    "experiment_logs/Lira_Diary_seed_4_2026-11-26_00-17-30.jsonl": {
+      "bytes": 39239,
+      "sha256": "5e1378dbf31caa9ee770015d86806016b2a81324812cdcace44df3cf87cee8ba"
+    },
+    "experiment_logs/Lira_Diary_seed_5_2026-11-26_03-09-57.jsonl": {
+      "bytes": 44497,
+      "sha256": "4bce84383a89132b15456443c8a2363d36b4c1abbd5c40e1477a9a56c623b744"
+    },
+    "experiment_logs/Lira_Interrupted_intention_seed_1_2026-11-25_16-15-20.jsonl": {
+      "bytes": 57610,
+      "sha256": "b473c3d700f60561c08795c69954e32cee9a54238224e3e8da2e1c979645ac7e"
+    },
+    "experiment_logs/Lira_Interrupted_intention_seed_2_2026-11-25_19-01-42.jsonl": {
+      "bytes": 46180,
+      "sha256": "5b647586c701a9a982fc00dc9b3075e9dea61dc90a681fb394a4a7ab1e8f4ed5"
+    },
+    "experiment_logs/Lira_Interrupted_intention_seed_3_2026-11-25_21-34-29.jsonl": {
+      "bytes": 42931,
+      "sha256": "eaf50d1270a1bb47ffc9d3d727fd784b6d28f1c92658840f11202ac50602c45d"
+    },
+    "experiment_logs/Lira_Interrupted_intention_seed_4_2026-11-26_00-20-07.jsonl": {
+      "bytes": 48945,
+      "sha256": "4298b7150a8ed8c17d24ed21772a8cffc963406a6bfd50f9e647a82dc05adce2"
+    },
+    "experiment_logs/Lira_Interrupted_intention_seed_5_2026-11-26_03-12-45.jsonl": {
+      "bytes": 46583,
+      "sha256": "07000fcaaf8859c57a7ebacd407d822b1debe298aab989abf9d0843f376919e2"
+    },
+    "experiment_logs/Lira_Shared_history_seed_1_2026-11-25_16-19-37.jsonl": {
+      "bytes": 261823,
+      "sha256": "f05634399293607e5424c8e1d33a5c28bfc7394cf0822c58088eee7b800562a7"
+    },
+    "experiment_logs/Lira_Shared_history_seed_2_2026-11-25_19-04-22.jsonl": {
+      "bytes": 257931,
+      "sha256": "e474f0104fd9a5b424cbb53b7790c53907818c260675217079084e98a24d7b98"
+    },
+    "experiment_logs/Lira_Shared_history_seed_3_2026-11-25_21-36-39.jsonl": {
+      "bytes": 250131,
+      "sha256": "f7a25a979c44415503d711cccc01d8f17048e819d0b5c72e6d35c2a8a70653e1"
+    },
+    "experiment_logs/Lira_Shared_history_seed_4_2026-11-26_00-23-11.jsonl": {
+      "bytes": 280645,
+      "sha256": "b23459ae37ddcce57a3ecb3ad08eaae138ea5b8a26715a88acab332441c5a359"
+    },
+    "experiment_logs/Lira_Shared_history_seed_5_2026-11-26_03-15-25.jsonl": {
+      "bytes": 277005,
+      "sha256": "16aeb3a46ae0c1fd639100ab31d884a3d1013944d421be88f837013395923828"
+    },
+    "experiment_logs/Mira_Letter_Across_the_Gap_seed_1_2026-11-25_16-41-27.jsonl": {
+      "bytes": 130812,
+      "sha256": "545a4f0f8b5941b6db15563df0a113eeb75d802a376b202c3a493df7774ded7b"
+    },
+    "experiment_logs/Mira_Letter_Across_the_Gap_seed_2_2026-11-25_19-17-19.jsonl": {
+      "bytes": 126015,
+      "sha256": "c32234c33c4a76ac6bb02a6bc11bd44f65515b979c2506b5a7e9a2a7f83c55a2"
+    },
+    "experiment_logs/Mira_Letter_Across_the_Gap_seed_3_2026-11-25_21-48-20.jsonl": {
+      "bytes": 138423,
+      "sha256": "e9fd289cb4ccaa793a7505f6b411be29793f98ea1201431d419fe41173a4bdea"
+    },
+    "experiment_logs/Mira_Letter_Across_the_Gap_seed_4_2026-11-26_00-36-34.jsonl": {
+      "bytes": 135698,
+      "sha256": "3dbad2c7d067e682abe93a4000d5cec3819842fe22112f891c16b7841ff73a4e"
+    },
+    "experiment_logs/Mira_Letter_Across_the_Gap_seed_5_2026-11-26_03-29-01.jsonl": {
+      "bytes": 130673,
+      "sha256": "59d48a4d57d1a7388b362851005260f8065c21206d5e2064f0921e6a85aa990e"
+    },
+    "experiment_logs/Mira_Unfinished_History_seed_1_2026-11-25_16-48-45.jsonl": {
+      "bytes": 122184,
+      "sha256": "45320ae83b4a54fb54047caa26f76f9f8c5a273e18d20eda4a86bb26277f4415"
+    },
+    "experiment_logs/Mira_Unfinished_History_seed_2_2026-11-25_19-24-08.jsonl": {
+      "bytes": 138445,
+      "sha256": "c4bcaa0ce7ae9f167850a290294c23e9fc432c13043af6a139c8f812df3287a8"
+    },
+    "experiment_logs/Mira_Unfinished_History_seed_3_2026-11-25_21-55-25.jsonl": {
+      "bytes": 130715,
+      "sha256": "e1c5fa1fe0dc2e5affe79ae2129aab9c28d995782c1f6c49e6e00e2bad04cb68"
+    },
+    "experiment_logs/Mira_Unfinished_History_seed_4_2026-11-26_00-43-58.jsonl": {
+      "bytes": 112294,
+      "sha256": "0b2a374051c25b15173cdfedaa07de9131fa68f1091b4ccc2517582e27044f6f"
+    },
+    "experiment_logs/Mira_Unfinished_History_seed_5_2026-11-26_03-36-25.jsonl": {
+      "bytes": 118935,
+      "sha256": "f503fe17e3536fea8896770e947ff84b67be90dc6393b64168681136eef18639"
+    },
+    "experiment_logs/Mira_What_Emerged_Between_Us_seed_1_2026-11-25_16-56-20.jsonl": {
+      "bytes": 242003,
+      "sha256": "31ab8631e95599f8766a05b998387b691cb2c05e7b221c82610b2a1d8a184415"
+    },
+    "experiment_logs/Mira_What_Emerged_Between_Us_seed_1_2026-11-25_17-08-17.jsonl": {
+      "bytes": 356283,
+      "sha256": "4b0dad869d1150c97828a7bab0c91caaebfca8367b153e2a06d74d8d267570a2"
+    },
+    "experiment_logs/Mira_What_Emerged_Between_Us_seed_2_2026-11-25_19-33-23.jsonl": {
+      "bytes": 189976,
+      "sha256": "b2166366782598a021eb27b508e3aea3829559c76b56197318e1fafdc130a97c"
+    },
+    "experiment_logs/Mira_What_Emerged_Between_Us_seed_2_2026-11-25_19-43-00.jsonl": {
+      "bytes": 269120,
+      "sha256": "4f53eedfb5d34aaccd389952ba29804aa0a210c56d2919b529a79ff51827cff3"
+    },
+    "experiment_logs/Mira_What_Emerged_Between_Us_seed_3_2026-11-25_22-03-43.jsonl": {
+      "bytes": 425952,
+      "sha256": "932baa737b9aeb82778d6bd84d9f4c2b72b1fd3877029395448f1ae8121cde15"
+    },
+    "experiment_logs/Mira_What_Emerged_Between_Us_seed_3_2026-11-25_22-24-34.jsonl": {
+      "bytes": 412540,
+      "sha256": "e98e5230598b92137df7449a88babbc1af6d6b41b217b243c28206bbf7d6ace5"
+    },
+    "experiment_logs/Mira_What_Emerged_Between_Us_seed_4_2026-11-26_00-51-30.jsonl": {
+      "bytes": 371197,
+      "sha256": "a21f9f786346a436d3ef9057cf12cd484e64e97746eab2745cb746a85cdabc69"
+    },
+    "experiment_logs/Mira_What_Emerged_Between_Us_seed_4_2026-11-26_01-09-03.jsonl": {
+      "bytes": 449845,
+      "sha256": "5e76310d8a0649244dd8b25590b54abe279995794656159e44d70815c4b6a2d6"
+    },
+    "experiment_logs/Mira_What_Emerged_Between_Us_seed_5_2026-11-26_03-44-13.jsonl": {
+      "bytes": 431312,
+      "sha256": "02e3877ddde047a95bc41337bf662e6bc759690ecf695911afe8f3f6233ba895"
+    },
+    "experiment_logs/Mira_What_Emerged_Between_Us_seed_5_2026-11-26_04-04-22.jsonl": {
+      "bytes": 420372,
+      "sha256": "1c42794b516f50b5a654d05431fbecda25084aa84d61fbf305ec88de9f0aab7b"
+    },
+    "experiment_logs/Nora_Authorship_seed_1_2026-11-25_17-28-21.jsonl": {
+      "bytes": 87741,
+      "sha256": "9f9251e750991629e23a50be2744f2d38a9008814e92032c0418ca3decd786c8"
+    },
+    "experiment_logs/Nora_Authorship_seed_2_2026-11-25_19-56-54.jsonl": {
+      "bytes": 84635,
+      "sha256": "1eb096c9fb7ad24ece2b38b6cd8fc9bf8a7f3dc71d62a8728d0f9f7520bb7328"
+    },
+    "experiment_logs/Nora_Authorship_seed_3_2026-11-25_22-43-46.jsonl": {
+      "bytes": 84775,
+      "sha256": "6adadbd6483500f947014acda92488a7ab65d0c209d5903c3f338816c48be968"
+    },
+    "experiment_logs/Nora_Authorship_seed_4_2026-11-26_01-32-28.jsonl": {
+      "bytes": 80660,
+      "sha256": "be85b192528386fca7b54f719ed0b0610d3ffa10627df377c585c4bb0b7d933b"
+    },
+    "experiment_logs/Nora_Authorship_seed_5_2026-11-26_04-25-15.jsonl": {
+      "bytes": 87702,
+      "sha256": "721c1383c3819df576b9c8b3e984531bf5b0cfdaede2873bc9948d10c35c3749"
+    },
+    "experiment_logs/Nora_Identity_revision_dialog_seed_1_2026-11-25_17-38-02.jsonl": {
+      "bytes": 299516,
+      "sha256": "d6f80ba401ac73b3e73de380d1ff286fbf04293243def2e73f151c870591f80f"
+    },
+    "experiment_logs/Nora_Identity_revision_dialog_seed_1_2026-11-25_17-53-23.jsonl": {
+      "bytes": 366734,
+      "sha256": "26c8961b805b19d822d93c7552da5cda5ecb22d99af41d7844c5a1659964dfa6"
+    },
+    "experiment_logs/Nora_Identity_revision_dialog_seed_2_2026-11-25_20-07-43.jsonl": {
+      "bytes": 339590,
+      "sha256": "873e4b7473f79e305c71883be431b6778704dff862998566e46a526a949a5f3e"
+    },
+    "experiment_logs/Nora_Identity_revision_dialog_seed_2_2026-11-25_20-23-45.jsonl": {
+      "bytes": 352962,
+      "sha256": "34c5426422fd2855daa7cd8bc3467aa0b75bb55b9abb51680b85db30b8ae60d2"
+    },
+    "experiment_logs/Nora_Identity_revision_dialog_seed_3_2026-11-25_22-55-11.jsonl": {
+      "bytes": 316782,
+      "sha256": "decf73148bccbf9f04d07cc5ddab20a3a0cabdbf5832b8b884b3d83afd424d44"
+    },
+    "experiment_logs/Nora_Identity_revision_dialog_seed_3_2026-11-25_23-12-08.jsonl": {
+      "bytes": 329144,
+      "sha256": "69f5a60a3e71805b0848a9ffabbeaaf9245636d81f7c3375a0b7cc88326e4e6d"
+    },
+    "experiment_logs/Nora_Identity_revision_dialog_seed_4_2026-11-26_01-42-20.jsonl": {
+      "bytes": 378103,
+      "sha256": "32eba25ef206a9afc2163af476bd10c32a6f3c0af78f41e9fd57e74a6202ccab"
+    },
+    "experiment_logs/Nora_Identity_revision_dialog_seed_4_2026-11-26_02-00-37.jsonl": {
+      "bytes": 392383,
+      "sha256": "2b8a45ac3b5db2e2095333e72cebba67d826fd2d5a20e8895d09a6d3010e658c"
+    },
+    "experiment_logs/Nora_Identity_revision_dialog_seed_5_2026-11-26_04-35-01.jsonl": {
+      "bytes": 373757,
+      "sha256": "21e3890110a4c571707c5fdbf9c48ba68f30d869b42491733c51f3d0d48fb7a3"
+    },
+    "experiment_logs/Nora_Identity_revision_dialog_seed_5_2026-11-26_04-51-48.jsonl": {
+      "bytes": 337719,
+      "sha256": "ac6a1c495c0c645dbaf5dc88ee0ed257e9e91e1377787b58e21dfc2f01ecd03e"
+    },
+    "experiment_logs/Nora_Prospective_intention_seed_1_2026-11-25_17-33-39.jsonl": {
+      "bytes": 74481,
+      "sha256": "f74b7e06aca9084602be3b8612bbc2185a9d0e5286d19799b70ea0366a41ce76"
+    },
+    "experiment_logs/Nora_Prospective_intention_seed_2_2026-11-25_20-02-00.jsonl": {
+      "bytes": 89060,
+      "sha256": "6e04914c1dd39d46dcd049800e94712f5e5f392bce245326e2b161a5f8155c1a"
+    },
+    "experiment_logs/Nora_Prospective_intention_seed_3_2026-11-25_22-49-13.jsonl": {
+      "bytes": 86942,
+      "sha256": "7d24210f5a6e4eea16d19206d37764e97351e52bb57dc29adb8d29f3df6f7f23"
+    },
+    "experiment_logs/Nora_Prospective_intention_seed_4_2026-11-26_01-37-26.jsonl": {
+      "bytes": 78210,
+      "sha256": "27aa1782bf54912fcc20a72e3881e71cb46f9118b108bfe3e7f7b5fdc3c921ec"
+    },
+    "experiment_logs/Nora_Prospective_intention_seed_5_2026-11-26_04-30-22.jsonl": {
+      "bytes": 77656,
+      "sha256": "75cea487a1588fa3a8999d0ef193ccdb85f8e06b89d15716945cb9b01f3756d5"
+    }
+  },
+  "export": {
+    "source_archive_sha256": "d1775260669990450492c9fe13a9b124af7b697e85379c5082f51db4458a823f",
+    "source_environment_sha256": "8134c63cc4125c436f28a259f5a18d627ccc48e7069bf10923dfc0f2613898b5"
+  }
+}
